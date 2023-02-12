@@ -8,7 +8,7 @@
 
 Think of it like the skeleton that makes up the structure of a website and holds the content.
 
-<iframe src="https://giphy.com/embed/z9J86Wo2AQ6as" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+![Skeletons dancing](skeletons_dancing.jpeg)
 
 It's important to note that HTML is not a programming language-- it is a markup language that defines the structure of your site. 
 
