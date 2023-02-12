@@ -128,7 +128,7 @@ Or a standalone element which is an element that's closed and cannot contain any
 
 ## Let's look at some sample HTML
 
-Open up in your Visual Code Editor text editor the `index.html` file in the `01_HTML_example` folder. Let's start to write some HTML, but first a few things:
+Open up in your Visual Code Editor text editor the [`index.html`](01_HTML_example/index.html) file in the `01_HTML_example` folder. Let's start to write some HTML, but first a few things:
 
 ## HTML Tags
 
@@ -340,4 +340,4 @@ Comments are only visible in the page's source code but not rendered by the brow
 
 ## Mess Around with HTML
 
-Open up in your Visual Code Editor text editor the `index.html` file in the `02_HTML_example` folder. Play around with the HTML elements in that file. Experiment with adding or changing things around.
+Open up in your Visual Code Editor text editor the [`index.html`](02_HTML_example/index.html) file in the `02_HTML_example` folder. Play around with the HTML elements in that file. Experiment with adding or changing things around.
