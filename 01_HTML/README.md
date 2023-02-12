@@ -8,7 +8,7 @@
 
 Think of it like the skeleton that makes up the structure of a website and holds the content.
 
-![Skeletons dancing](skeletons_dancing.jpeg)
+![Skeletons dancing](01_HTML_example/images/skeletons_dancing.jpeg)
 
 It's important to note that HTML is not a programming language-- it is a markup language that defines the structure of your site. 
 
