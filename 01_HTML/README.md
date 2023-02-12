@@ -32,7 +32,7 @@ If you're using Firefox, you can open up the Web Inspector [this way](https://fi
 
 ## How A Site Works
 
-HTML (Structures Your Content) + CSS (Makes Your Content Look Pretty) = Website. 
+**HTML (Structures Your Content) + CSS (Makes Your Content Look Pretty) = Website.**
 
 Ideally, your HTML, CSS and images files should be stored in the same folder with file names that DO NOT include spaces or special characters.
 
