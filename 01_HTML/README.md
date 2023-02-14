@@ -38,7 +38,7 @@ Ideally, your HTML, CSS and images files should be stored in the same folder wit
 
 ![This is the HTML folder structure](01_HTML_example/images/folder_structure.png)
 
-We will be using Repl.it code snippets so everyone can easily play around with the code. However, you actually write your code on a text editor. For this class, you will be using [Visual Studio Code](https://code.visualstudio.com/) which should be installed in your computers. However, any plain text editor will do: [TextEdit](https://support.apple.com/guide/textedit/welcome/mac), which comes with Macs, [Notepad](https://fileinfo.com/software/microsoft/notepad), which comes with Microsoft, [Sublime Text](https://www.sublimetext.com/) and [Atom](https://atom.io/) are all good choices.
+For this class, you will be using [Visual Studio Code](https://code.visualstudio.com/) which should be installed in your computers. However, any plain text editor will do: [TextEdit](https://support.apple.com/guide/textedit/welcome/mac), which comes with Macs, [Notepad](https://fileinfo.com/software/microsoft/notepad), which comes with Microsoft, [Sublime Text](https://www.sublimetext.com/) and [Atom](https://atom.io/) are all good choices.
 
 You can save your code by using the file extension of the type of markup, stylesheet or programming language you're writing. For example, save HTML files using the extension .html and save your CSS files using the extension .css.
 
@@ -190,7 +190,9 @@ The Body tag defines the page's body and contains the actual content of the page
   </body>
 </html>
 ```
+## How to view changes
 
+So you've changed your HTML file, how do you view changes? You can go the Mac Finder, look for the folder of the file you want to open and simply click on that `index.html` file. The file should open up on a browser, and you should see the changes you've made. If you make additional changes, you can save the HTML file, then refresh your browser to see the latest changes. For this class, make sure you open the Google Chrome browser.
 
 **Attributes** 
 
