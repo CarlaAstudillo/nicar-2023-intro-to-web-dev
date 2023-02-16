@@ -1,5 +1,13 @@
 # CSS
 
+## What is it?
+
+To do.
+
+## Selectors
+
+To do.
+
 ## CSS Properties
 
 To change the appearance or the behavior of an HTML element, you can assign it a CSS property.
@@ -51,14 +59,16 @@ Here's how it looks for now.
 These properties allow you to change the properties of the font.
 
 - [font-size](https://www.w3schools.com/cssref/pr_font_font-size.php): the size of the text, usually in pixels.
+
 - [font-weight](https://www.w3schools.com/cssref/pr_font_weight.php): the weight of the text, usually a value between 100 and 900. Normal is 400 and 700 is bold.
+
 - [font-style](https://www.w3schools.com/cssref/pr_font_font-style.php): you can choose between normal, and italic.
 
 In our CSS file, let's add a font-size of 16px, a font-weight of 100, and a font-style italic.
 
-![A CSS file with text properties and the result in the browser](./img/properties/text-properties.jpg)
+![A CSS file with text properties and the result in the browser](./img/properties/font-properties.jpg)
 
-If you want to change the font, you need to overwrite the default font-family properties.
+If you want to change the font, you need to overwrite the default font-family property.
 
 - [font-family](https://www.w3schools.com/cssref/pr_font_font-family.php): the font you want to display. [Google Fonts](https://fonts.google.com/) offers a lot of them, for free.
 
@@ -78,11 +88,19 @@ Here's the result!
 
 ### Text properties
 
-text-color
+With CSS, you can change the styling of your text.
 
-text-alignment
+- [color](https://www.w3schools.com/css/css_text.asp): you can use a [color name](https://www.w3schools.com/colors/colors_names.asp) (like "pink"), a [HEX value](https://www.w3schools.com/colors/colors_hexadecimal.asp) ("#FFC0CB" is pink), or an [RGB value](https://www.w3schools.com/colors/colors_rgb.asp) ("rgb(255,192,203)" is pink too).
 
-text-decoration
+- [text-align](https://www.w3schools.com/css/css_text_align.asp): you can use left, center, justify, or right, to align horizontally your text.
+
+- [text-decoration](https://www.w3schools.com/css/css_text_decoration.asp): you have the choice between underline, line-through, and overline.
+
+Let's update our code with darkblue as a color, center as alignment, and underline for text-decoration.
+
+Looking good!
+
+![A CSS and HTML files creating an underlined blue paragraph.](./img/properties/text-properties.jpg)
 
 ### Background properties
 
@@ -105,6 +123,8 @@ border
 margin
 
 padding
+
+### Position
 
 ### Media queries
 
