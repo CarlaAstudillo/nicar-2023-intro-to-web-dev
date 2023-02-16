@@ -1,9 +1,9 @@
 # Advanced / Looking Forward
 
-Github
+Github (Carla)
 
-Frameworks
+Node.js (Nael)
 
-Node.js
+Frameworks / React (Andrew)
 
-D3
+D3 (Nael)
