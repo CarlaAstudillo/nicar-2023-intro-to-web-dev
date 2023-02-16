@@ -8,7 +8,7 @@ And there are a [loooooot of them](https://www.w3schools.com/cssref/index.php)!
 
 ### Setup
 
-To test the most important ones, we are going to use a stylesheet and an HTML file.
+To test the main ones, we are going to use a stylesheet and an HTML file.
 
 In the stylesheet, we will add our CSS.
 
@@ -18,7 +18,7 @@ _style.css_
 /* Some css in here. */
 ```
 
-And in our HTML file, we need to reference our stylesheet and we will add a simple div element, with some [cat ipsum](http://www.catipsum.com/) in it.
+In our HTML file, we need to reference our stylesheet and we will add a simple div element, with some [cat ipsum](http://www.catipsum.com/) in it. This div will be our guinea pig.
 
 _index.html_
 
@@ -41,6 +41,10 @@ _index.html_
   </body>
 </html>
 ```
+
+Here's how it looks for now.
+
+![An HTML file and the result in the browser.](./img/properties/setup.jpg)
 
 ### Font properties
 
