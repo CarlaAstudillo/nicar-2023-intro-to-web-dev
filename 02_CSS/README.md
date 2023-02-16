@@ -10,6 +10,8 @@ To do.
 
 ## CSS Properties
 
+> In this section, we are going to write HTML and CSS code, and then see the result in the browser. If you find the result too small in the browser, I suggest zooming in. In the "View" menu at the top left of the browser, click on "Zoom in". Note that each tab in the browser can have a different zoom level.
+
 To change the appearance or the behavior of an HTML element, you can assign it a CSS property.
 
 And there are a [loooooot of them](https://www.w3schools.com/cssref/index.php)!
@@ -264,6 +266,59 @@ And here's the result! Change the z-index to -1 to see the gif below the divs.
 
 ### Display
 
+With the [display property](https://www.w3schools.com/cssref/pr_class_display.php), you can change how the element is rendered on the page.
+
+- A "none" display will not show the element.
+
+- An "inline" display will place the element next to the others elements in the same parent container. The width and height properties will have no effect.
+
+- A "block" display will place the element on a new line and it will take the whole width.
+
+- An "inline-block" is a mix of "inline" and "block". It will place the element next to its siblings but height and width can be specified.
+
+- A "flex" display is a powerful feature that will affect all children of the element. Very useful to align multiple elements together easily.
+
+In the CSS file, change the display of the body to flex.
+
+```css
+body {
+  display: flex;
+  background-color: rgb(25, 25, 25);
+}
+```
+
+You'll notice that the divs are now all placed on the same horizontal axis.
+
+You can do much more with a flex display. I strongly suggest reading [this excellent guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for more information.
+
+![A webpage showing three horizontally aligned paragraphs.](./img/properties/display-property.jpg)
+
 ### Media queries
 
-### Animations
+Sometimes, you want a specific property on a big screen, and another on a smaller screen. This is what [media queries](https://www.w3schools.com/cssref/css3_pr_mediaquery.php) are for.
+
+In our CSS, let's change some of the properties of our webpage for screens less than 600px.
+
+Here's the CSS code to do that. Write it at the end of your CSS file.
+
+```css
+@media (max-width: 600px) {
+  div {
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px 5px 0px 5px;
+  }
+}
+```
+
+If you resize your browser window, you'll see that the text is smaller and that there's less space between our divs when the width is less than 600px.
+
+### Transitions and animations
+
+Because CSS is awesome, you can also create transitions and animations with it!
+
+This would need another session, but if you are interested, I suggest reading the documentation for [transitions](https://www.w3schools.com/css/css3_transitions.asp) and [animations](https://www.w3schools.com/css/css3_animations.asp).
+
+In the meantime, copy and paste this CSS code into your stylesheet and enjoy the result!
+
+TO DO
