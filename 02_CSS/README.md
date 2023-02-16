@@ -4,41 +4,23 @@
 
 To change the appearance or the behavior of an HTML element, you can assign it a CSS property.
 
-### Inline style
+And there are a [loooooot of them](https://www.w3schools.com/cssref/index.php)!
 
-Let's start with a simple paragraph.
+### Setup
 
-```html
-<p>Hello!</p>
-```
+To test the most important ones, we are going to use a stylesheet and an HTML file.
 
-We could add a color property to make the text red or [any color we want](https://www.w3schools.com/colors/default.asp)! Test it in an HTML file and open the file in a browser to see the result.
+In the stylesheet, we will add our CSS.
 
-_Inside index.html_
-
-```html
-<p style="color:red;">Hello!</p>
-```
-
-The notation above, directly into the HTML tag, is called an inline style. It will modify the style of this specific element only.
-
-### Stylesheet
-
-If you want to change the color of all paragraphs, you would use a CSS file, also called a stylesheet.
-
-_Inside style.css_
+_style.css_
 
 ```css
-p {
-  color: red;
-}
+/* Some css in here. */
 ```
 
-For your stylesheet to be applied to your HTML file, you need to import it. It's best to do that inside the head tag.
+And in our HTML file, we need to reference our stylesheet and we will add a simple div element, with some [cat ipsum](http://www.catipsum.com/) in it.
 
-And now all paragraphs' text will be red when the HTML file opened in your browser.
-
-_Inside index.html_
+_index.html_
 
 ```html
 <!DOCTYPE html>
@@ -47,9 +29,57 @@ _Inside index.html_
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>Hello!</p>
-    <p>I am red too!</p>
-    <p>Me as well.</p>
+    <div>
+      Pet me pet me pet me pet me, bite, scratch, why are you petting me make
+      meme, make cute face Cat milk copy park pee walk owner escape bored tired
+      cage droppings sick vet vomit eat too much then proceed to regurgitate all
+      over living room carpet while humans eat dinner cat dog hate mouse eat
+      string barf pillow no baths hate everything why can't i catch that stupid
+      red dot missing until dinner time, you have cat to be kitten me right
+      meow.
+    </div>
   </body>
 </html>
 ```
+
+### Font properties
+
+font-size
+
+font-weight
+
+font-style
+
+font-family
+
+### Text properties
+
+text-color
+
+text-alignment
+
+text-decoration
+
+### Background properties
+
+background-color
+
+background-image
+
+background-size
+
+background-repeat
+
+### Box properties
+
+width
+
+height
+
+border
+
+margin
+
+padding
+
+### Media queries
