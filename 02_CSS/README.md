@@ -104,13 +104,23 @@ Looking good!
 
 ### Background properties
 
-background-color
+You can also change the appearance of the whole container.
 
-background-image
+- [background-color](https://www.w3schools.com/cssref/pr_background-color.php): you can pass it at a color name, HEX value or RGB value.
 
-background-size
+- [background-image](https://www.w3schools.com/cssref/pr_background-image.php): instead of color, you can use an image as background.
 
-background-repeat
+- [background-size](https://www.w3schools.com/cssref/css3_pr_background-size.php): you can specify the size in pixels or percentage (relative to the parent element), but it's more common to use "cover" (cuts or stretches the image to cover the entire container) or "contain" (fits the whole image in the container, even if it doesn't cover the whole container).
+
+- [background-repeat](https://www.w3schools.com/cssref/pr_background-repeat.php): you can decide if the image should be repeated or not with "repeat", "repeat-x", "repeat-y", or "no-repeat".
+
+- [background-position](https://www.w3schools.com/cssref/pr_background-position.php): how you want the image to be positionned. The options are "left top", "left center", "left bottom", "right top", "right center", "right bottom", "center top", "center center", "center bottom".
+
+Let's change our CSS file to add a grey color background to the body element and a picture of a cat as background to our div. You can download the image directly from this repository (./02_CSS/img/properties/cat.jpg).
+
+Here's how it looks now.
+
+![A webpage showing some text with a cat as background.](./img/properties/background-properties.jpg)
 
 ### Box properties
 
