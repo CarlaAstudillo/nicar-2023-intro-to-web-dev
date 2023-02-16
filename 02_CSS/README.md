@@ -83,3 +83,5 @@ margin
 padding
 
 ### Media queries
+
+### Animations
