@@ -66,7 +66,7 @@ These properties allow you to change the properties of the font.
 
 - [font-style](https://www.w3schools.com/cssref/pr_font_font-style.php): you can choose between normal, and italic.
 
-In our CSS file, let's add a font-size of 16px, a font-weight of 100, and a font-style italic.
+In our CSS file, let's add a font size of 16px, a font weight of 100, and a font-style italic.
 
 ![A CSS file with text properties and the result in the browser](./img/properties/font-properties.jpg)
 
@@ -98,11 +98,11 @@ With CSS, you can change the styling of your text.
 
 - [text-decoration](https://www.w3schools.com/css/css_text_decoration.asp): you have the choice between underline, line-through, and overline.
 
-Let's update our code with darkblue as a color, center as alignment, and underline for text-decoration.
+Let's update our code with dark blue as a color, center as alignment, and underline for text decoration.
 
 Looking good!
 
-![A CSS and HTML files creating an underlined blue paragraph.](./img/properties/text-properties.jpg)
+![A CSS and HTML files create an underlined blue paragraph.](./img/properties/text-properties.jpg)
 
 ### Background properties
 
@@ -116,7 +116,7 @@ You can also change the appearance of the whole container.
 
 - [background-repeat](https://www.w3schools.com/cssref/pr_background-repeat.php): you can decide if the image should be repeated or not with "repeat", "repeat-x", "repeat-y", or "no-repeat".
 
-- [background-position](https://www.w3schools.com/cssref/pr_background-position.php): how you want the image to be positionned. The options are "left top", "left center", "left bottom", "right top", "right center", "right bottom", "center top", "center center", "center bottom".
+- [background-position](https://www.w3schools.com/cssref/pr_background-position.php): how you want the image to be positioned. The options are "left top", "left center", "left bottom", "right top", "right center", "right bottom", "center top", "center center", and "center bottom".
 
 Let's change our CSS file to add a grey color background to the body element and a picture of a cat as background to our div. You can download the image directly from this repository (./02_CSS/img/properties/cat.jpg).
 
@@ -130,7 +130,7 @@ Now that we have backgrounds, we can something a bit strange: there's a gap betw
 
 If we inspect our page, and more specifically the body element, we can see that there's a default margin of 8px.
 
-![A browser with the developer tool opened, shows the styles tab.](./img/properties/body-default-margin.jpg)
+![A browser with the developer tool opened shows the styles tab.](./img/properties/body-default-margin.jpg)
 
 Each HTML elements are a box and you can modify this box with CSS. This is what we call the [CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp).
 
@@ -172,7 +172,7 @@ When placing elements on top of each other, you often need to adjust the z-index
 
 To demonstrate this property, we will add a small gif of a cat on the top right corner of the viewport. You can download the gif directly from this repo (./02_CSS/img/properties/cat.gif).
 
-First, add the gif to your HTML file with an img tag. You can place it just before the div.
+First, add the gif to your HTML file with an IMG tag. You can place it just before the div.
 
 In the same file, let's create multiple divs so our page is longer. Copy the current div and its content, and then paste it multiple times.
 
@@ -223,7 +223,7 @@ Your HTML should look like this.
 </html>
 ```
 
-In your CSS file, add the img tag. We will give it a position "fixed", with a "top" value of 10px (meaning 10px between the image and the top of the viewport) and a "left" value of 10px (meaning 10px between the image and the left side of the viewport).
+In your CSS file, add the IMG tag. We will give it a position "fixed", with a "top" value of 10px (meaning 10px between the image and the top of the viewport) and a "left" value of 10px (meaning 10px between the image and the left side of the viewport).
 
 We are also setting the z-index to 1, to make sure that the gif will be on top.
 
