@@ -126,7 +126,7 @@ Here's how it looks now.
 
 ### Box properties
 
-Now that we have backgrounds, we can something a bit strange: there's a gap between our cat div and the browser window.
+Now that we have backgrounds, we notice something a bit strange: there's a gap between our cat div and the browser window.
 
 If we inspect our page, and more specifically the body element, we can see that there's a default margin of 8px.
 
