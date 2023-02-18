@@ -223,7 +223,7 @@ Your HTML should look like this.
 </html>
 ```
 
-In your CSS file, add the IMG tag. We will give it a position "fixed", with a "top" value of 10px (meaning 10px between the image and the top of the viewport) and a "left" value of 10px (meaning 10px between the image and the left side of the viewport).
+In your CSS file, add the IMG tag. We will give it a position "fixed", with a "top" value of 10px (meaning 10px between the image and the top of the viewport) and a "right" value of 10px (meaning 10px between the image and the right side of the viewport).
 
 We are also setting the z-index to 1, to make sure that the gif will be on top.
 
