@@ -297,7 +297,7 @@ You can do much more with a flex display. I strongly suggest reading [this excel
 
 Sometimes, you want a specific property value on a big screen, and another one on a smaller screen. This is what [media queries](https://www.w3schools.com/cssref/css3_pr_mediaquery.php) are for.
 
-In our CSS, let's change some of the properties of our webpage for screens less than 600px.
+In our CSS, let's change some of the properties of our webpage for screens with a width of 600px or less.
 
 Here's the CSS code to do that. Write it at the end of your CSS file.
 
