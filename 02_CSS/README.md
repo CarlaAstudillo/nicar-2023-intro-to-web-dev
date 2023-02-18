@@ -158,7 +158,7 @@ In our CSS file, we add a 2 pixels wide orange border, with a solid style. We se
 
 HTML elements are positioned static by default, but you can change this property.
 
-- A "fixed" position will position the element relative to the browser viewport. The principal use case is when you want something on top of everything else that follows when the user scrolls.
+- A "fixed" position will position the element relative to the browser viewport. The main use case is when you want something on top of everything else that follows when the user scrolls.
 
 - An "absolute" position will position the element relative to its parent. Useful when you want to place an element on top of something else.
 
