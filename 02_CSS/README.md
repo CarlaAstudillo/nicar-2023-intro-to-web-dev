@@ -2,21 +2,21 @@
 
 ## What is it?
 
-To do.
+To do. Andrew.
 
 ## Selectors
 
-To do.
+To do. Andrew.
 
 ## CSS Properties
 
-> In this section, we are going to write HTML and CSS code, and then see the result in the browser. If you find the result too small in the browser, I suggest zooming in. In the "View" menu at the top left of the browser, click on "Zoom in". Note that each tab in the browser can have a different zoom level.
+> In this section, we are going to write HTML and CSS code, and then see the result in the browser. If you find the result too small in the browser, I suggest zooming in. In the "View" menu at the top left of the browser, click on "Zoom in". Note that each tab in your browser can have a different zoom level.
+
+### Setup
 
 To change the appearance or the behavior of an HTML element, you can assign it a CSS property.
 
 And there are a [loooooot of them](https://www.w3schools.com/cssref/index.php)!
-
-### Setup
 
 To test the main ones, we are going to use a stylesheet and an HTML file.
 
@@ -303,6 +303,10 @@ Here's the CSS code to do that. Write it at the end of your CSS file.
 
 ```css
 @media (max-width: 600px) {
+  body {
+    background-color: grey;
+  }
+
   div {
     font-size: 12px;
     padding: 10px;
@@ -311,14 +315,55 @@ Here's the CSS code to do that. Write it at the end of your CSS file.
 }
 ```
 
-If you resize your browser window, you'll see that the text is smaller and that there's less space between our divs when the width is less than 600px.
+If you resize your browser window to a smaller width, you'll notice that the background color becomes grey, the text smaller, and the space between divs narrower.
+
+![A web page with a grey background and small text.](./img/properties/media%20query.jpg)
 
 ### Transitions and animations
 
 Because CSS is awesome, you can also create transitions and animations with it!
 
-This would need another session, but if you are interested, I suggest reading the documentation for [transitions](https://www.w3schools.com/css/css3_transitions.asp) and [animations](https://www.w3schools.com/css/css3_animations.asp).
+We would need more time to dive into this topic, but if you are interested, I suggest reading the documentation for [transitions](https://www.w3schools.com/css/css3_transitions.asp) and [animations](https://www.w3schools.com/css/css3_animations.asp).
 
-In the meantime, copy and paste this CSS code into your stylesheet and enjoy the result!
+As a demonstration, add the animation property to your image CSS like below.
 
-TO DO
+```css
+img {
+  width: 75px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  animation: catAnimation 5s ease infinite;
+}
+```
+
+And create the _catAnimation_ by adding this at the end of your CSS file.
+
+```css
+@keyframes catAnimation {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(0, 100vh) translate(0, -75px) rotate(90deg);
+  }
+
+  50% {
+    transform: translate(-100vw, 100vh) translate(100px, -75px) rotate(180deg);
+  }
+
+  75% {
+    transform: translate(-100vw, 0) translate(100px, 15px) rotate(270deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+```
+
+Congrats! You are now an expert in CSS properties! :)
+
+![A cat gif moving all around a web page.](./img/properties/animation-property.gif)
