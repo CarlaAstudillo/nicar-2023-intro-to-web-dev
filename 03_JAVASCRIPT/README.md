@@ -64,11 +64,11 @@ Click on the "Download" tab at the bottom, then on "Full data". I also put the d
 
 ![Our World in Data website.](./img/loading-data/our-world-data.jpg)
 
-Move the file to your coding folder, and then add this code to _loading-data.js_.
+Move the file to your coding folder, and then add the code below to _loading-data.js_.
 
 On the first line, we create the asynchronous (don't worry about that for the moment) function _main_.
 
-On the second line, we fetch our local file. We use _await_ because we want to retrieve all of the data before running the rest of our script.
+On the second line, we fetch our local file with its relative path (this is why it starts with "./"). We use _await_ because we want to retrieve all of the data before running the rest of our script.
 
 On the third line, parse the fetch response as text. Again, we use _await_.
 
@@ -91,6 +91,36 @@ If you refresh your browser (with the URL from your local server), you should se
 ![A CSV file loaded by the browser.](./img/loading-data/csv-loaded.jpg)
 
 ### From a URL
+
+Now, how could we load data if it's hosted somewhere on the web? If we don't have the file locally?
+
+Easy! Just switch the relative path ("./co2.csv") by the URL pointing to the data you want to retrieve.
+
+I pushed the data in the repo. Here's its URL: https://raw.githubusercontent.com/CarlaAstudillo/nicar-2023-intro-to-web-dev/main/03_JAVASCRIPT/data/co2.csv?token=GHSAT0AAAAAABZZXWCAGZ2M6YFA5ET7JNBUY7SJGCQ.
+
+You can also find the URL directly on the repo GitHub page. Don't forget to click on the "Raw" button, to go to the raw data. Otherwise, it won't work.
+
+![A GitHub page showing a CSV file](./img/loading-data/data-github.jpg)
+
+Your code should look like this.
+
+```js
+async function main() {
+  const response = await fetch(
+    "https://raw.githubusercontent.com/CarlaAstudillo/nicar-2023-intro-to-web-dev/main/03_JAVASCRIPT/data/co2.csv?token=GHSAT0AAAAAABZZXWCAGZ2M6YFA5ET7JNBUY7SJGCQ"
+  );
+  const csv = await response.text();
+  console.log(csv);
+}
+
+main();
+```
+
+Be careful when loading data from the web. For your projects, only load data from servers that you control and own.
+
+If your project ends up having millions of page views, you will flood the hosting server with... millions of requests! It's not very nice to do that to someone else. If it's your server, you can expect it and deal with it.
+
+If the people hosting the data remove it or change its URL, your project won't work anymore. If it's your server, this won't happen unless you make the change.
 
 ## Using libraries
 
