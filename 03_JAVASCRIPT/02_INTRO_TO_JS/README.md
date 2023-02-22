@@ -22,7 +22,7 @@ You can even ask it the same question in a language your more comfortable with (
 <details>
 <summary>See it in Spanish!</summary>
 <br>
-<img src="../../_media/03_02_ask-chat-gpt.jpg" alt="Asking Chat-GPT how to define a variable in JavaScript, but in Spanish.">
+<img  width="500" src="../../_media/03_02_ask-chat-gpt-spanish.jpg" alt="Asking Chat-GPT how to define a variable in JavaScript, but in Spanish.">
 </details>
 <br>
 
