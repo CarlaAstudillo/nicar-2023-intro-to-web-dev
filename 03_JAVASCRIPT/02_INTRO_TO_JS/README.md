@@ -9,17 +9,20 @@ The **syntax** of a language is how the vocabulary is strung together to create 
 Vocabulary and syntax are concepts that you learn through practice, and unlike riding a bike, you do forget them if you haven't used them in a while, so it's important to understand how to find them again. This is why I've bolded so many concepts in the programming section like "defining a varible" or "invoking a function". These words are universal in programming languages and using them to ask questions of others or the internet is 50% of the battle.
 
 Traditionally, this is the part where I teach you how to Google:
-![Asking Google how to define a variable in JavaScript](../../_media/03_02_ask-google.jpg)
 
+<img width="500" src="../../_media/03_02_ask-google.jpg" alt="Asking Google how to define a variable in JavaScript">
+<br ><br >
 
 But, I've actually come to realize that for most basic programming concepts, AI and large language models preform just as well as Google, but in a more digestible format. Compare the Google search above to just asking Chat-GPT the same question:
-![Asking Chat-GPT how to define a variable in JavaScript](../../_media/03_02_ask-chat-gpt.jpg)
+
+<img width="500" src="../../_media/03_02_ask-chat-gpt.jpg" alt="Asking Chat-GPT how to define a variable in JavaScript">
+<br ><br >
 
 You can even ask it the same question in a language your more comfortable with (mixing in the keywords in English) and have it give you a response in that language.
 <details>
 <summary>See it in Spanish!</summary>
 <br>
-<img href="../../_media/03_02_ask-chat-gpt.jpg" alt="Asking Chat-GPT how to define a variable in JavaScript, but in Spanish.">
+<img src="../../_media/03_02_ask-chat-gpt.jpg" alt="Asking Chat-GPT how to define a variable in JavaScript, but in Spanish.">
 </details>
 <br>
 
@@ -186,12 +189,13 @@ Used to combine two comparison expressions into a single value. If this is your 
 <br >
 
 ![An infographic breaking down the parts of a logical expression](../../_media/03_02_diagram-js-logical-expression.jpg)
+<br >
 <small>In the above example, "Expression 1" evaluates to <code>false</code> and "Expression 2" evaluates to <code>true</code>. Because "Expression 3" uses the <code>or</code> operator, only one of the two underlying expressions need to be true. Therefore, "Expression 3" also evaluates to <code>true</code>. 
 
 ### Functions
 Functions are a bit of prewritten code that you can invoke to preform the same code over and over. This code could come with the language, be written by you, or be written by someoone else and brought into your code.
 
-To **invoke** a function use it's name and supply arguments in parenthesis (`()`) (or lea)
+To **invoke** a function use it's name and supply arguments in parenthesis (`()`).
 
 ![An infographic breaking down the parts of a function invocation](../../_media/03_02_diagram-js-invoke-function.jpg)
 
@@ -259,17 +263,17 @@ In JavaScript, decisions are often called **conditionals**. They are coded using
 
 ![An infographic breaking down the parts of conditional](../../_media/03_02_diagram-js-conditional.jpg)
 
-Technically, all you need to make decisions in JavaScript is if statements, but there's two more concepts that are designed to make your life easier.
+Technically, all you need to make decisions in JavaScript is if statements, but there are two more concepts that will help you code more concisely.
 
 ### Else If
 Immediately after an `if` block, you can use the `else if` keywords in combination, followed by a condition, and another block. This block's statements will only be executed if the proceeding conditions were *not* met, but it's condition was. You can chain as many of these `else if` blocks as you want to cover as many conditions as necessary.
 
 ```javascript
-if(noAlcohol) {
+if (noAlcohol) {
   alert("Here you go!");
-} else if (age > 21){
+} else if (age > 21) {
   alert("Here you go!");
-} else if (country === "Mexico"){
+} else if (country === "Mexico") {
   alert("Here you go!");
 }
 ```
@@ -278,9 +282,9 @@ if(noAlcohol) {
 Immediately after an `if` or `else if` block, you can use the `else` keyword and start a new block. This block's statements will only be executed if none of the proceeding conditional blocks executed.
 
 ```javascript
-if(noAlcohol) {
+if (noAlcohol) {
   alert("Here you go!");
-} else if (age > 21){
+} else if (age > 21) {
   alert("Here you go!");
 } else {
   alert("No can do!");
@@ -312,5 +316,5 @@ for(num of Array.from({ length: 5 }).keys()){
 }
 ```
 
-## Excercise
-In the previous section, you used Scratch to design a script that grades a set of test scores. Now, translate that design into JavaScript.
+## Your Turn!
+**Excercise 9 – Coding in JavaScript.** In the previous section, you used Scratch to design a script that grades a set of test scores. Now, translate that design into JavaScript.

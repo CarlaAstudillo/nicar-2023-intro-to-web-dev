@@ -47,7 +47,7 @@ _Note: Technically in JavaScript, an Array is an object, but many programming la
 ### Variables
 In programming varaibles are a way for you to keep track of all the types that could be floating around in your program. For example, just typing `5` into your code and running it will spawn that type into existence, but its utility is limited. To give it some meaning, you can **declare** a new variable with a unique name, and **assign** a value to it. For example, you might declare a new variable called `age` and then assign it the value `32`. Different languages have different rules about how and when you can declare and assign variables, but in almost all of them these concepts still exist.
 
-#### Excercise
+#### Your Turn!
 In [Scratch](https://scratch.mit.edu/projects/editor/), make a new variable by clicking "Make a Variable", and call it "score". This is how you declare it. Then use the slider options to set a value to it, this is how you assign it. 
 
 ### Operations
@@ -65,7 +65,7 @@ Each programming language comes with their own set of basic operations (though m
 
 This may seem obvious, but operations can **return** a value after preforming the operation. Basic operations simply return the result of the operation (e.g. `5 + 5` returns `10`). Most functions and methods also return a value, a `sqrt` function takes the number `4` as an argument and return the number `2`. Some functions and methods *don't* return anything though. The `alert` function in JavaScript takes a string as an argument and opens up a popup displaying it to the user, but it doesn't return anything in the code.
 
-#### Excercise
+#### Your Turn!
 In [Scratch](https://scratch.mit.edu/projects/editor/), use the "Set variable" operation block to set a custom value for your score. Then combine that block with the basic operator blocks like "+" or "-". Once you're comfortable, you can play with some of the function blocks like "pick a random number" or "sqrt". Then combine a number of these operations into a function of your own. In Scratch, functions are called "blocks".
 
 ### Conditionals
@@ -82,7 +82,7 @@ You might not realize it, but in many ways your brain works in a similiar way. I
   
 This is just a basic example of a decision tree you might take if you were building a bartending robot, but in reality you could add dozens of more decisions here. Are they on a list of problem clientele? Do they have an outstanding tab? Do they look like they should be cut off? Then your technical lead tells you there's a new client for your bartending robot in Mexico where the drinking age is 18, and suddenly you have to add more decisions depending on where the robot is located.
 
-#### Excercise
+#### Your Turn!
 In [Scratch](https://scratch.mit.edu/projects/editor/), use the conditional blocks under "Control" to build a test grading robot which hands out letter grades based off our `score` variable. We'll go with a classic grading scale of:
   - A: 100 - 90
   - B: 89 - 80
@@ -107,7 +107,7 @@ Loops are made up of two things:
 
 Loops aren't just a convinience though. You might be thinking, "If I have 10 numbers, why not just write one statement that adds them all up with arithmetic operators?" And that's a good question! Loops make that easier to write, but it also enables you to preform operations on an indefinite number of items. Sure, you could design a calculator that only ever takes two numbers, but what if you wanted to build a calculator that could take any count of numbers? Then, you'd need a loop.
 
-#### Excercise
+#### Your Turn!
 In [Scratch](https://scratch.mit.edu/projects/editor/), create a list called `scores` and three variables called `sum`, `count`, and `iteration` (you can delete the `score` variable and `sum` block you made earlier, that won't be necessary anymore). Use the editor to add some numbers between 50 - 100 to the scores list. Finally, create a script that adds all the numbers in the scores list together and keeps a count of how many numbers were added together. Hint: When looping through a set of data, it's usually easiest to use a loop with a "count" termination condition -- in Scratch, that loop is called a "repeat" loop.
 
 ### Events
@@ -118,7 +118,7 @@ Events are the things that happen that trigger your code. When you're building a
 
 You can even create custom triggers of your own, but that's a more advanced topic for another day.
 
-#### Excercise
+#### Your Turn!
 In [Scratch](https://scratch.mit.edu/projects/editor/), add a event to the top of your blocks which triggers them when a user hits the space bar.
 
 ## Putting it all together
