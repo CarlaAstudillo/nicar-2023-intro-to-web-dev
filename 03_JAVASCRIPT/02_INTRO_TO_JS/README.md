@@ -68,7 +68,7 @@ Define objects with curly braces* (`{}`).
 ```javascript
 {}
 ```
-<small>*Like many things in JavaScript, the meaning of code is contextual. Curly braces signify <em>both</em> a block and an object. If you start filling it with properties, it's an object. If you fill it with statements, it's a block. If you don't do either, it depends on how it's being used.</small>
+<sub><sup>*Like many things in JavaScript, the meaning of code is contextual. Curly braces signify <em>both</em> a block and an object. If you start filling it with properties, it's an object. If you fill it with statements, it's a block. If you don't do either, it depends on how it's being used.</sup></sub>
 
 Inside the curly braces, define each property with a unique name as a string. If the name follows the rules for naming explained above, you can skip using the quotes.
 
@@ -176,7 +176,7 @@ Used to compare two values and return a boolean.
 | Greater Than or Equal To | `>=` | `2 >= 2` 
 | Less Than or Equal To | `<=` | `5 <= 3`
 
-<small>*You might see a different kind of (in)equality operator with one less equal sign (`==` vs `===` and `!=` vs `!==`). The short answer is don't use them. In nearly five years of professional programming, I've never purposefully used the shorter operator.</small>
+<sub><sup>*You might see a different kind of (in)equality operator with one less equal sign (`==` vs `===` and `!=` vs `!==`). The short answer is don't use them. In nearly five years of professional programming, I've never purposefully used the shorter operator.</sup></sub>
 
 ### Logical Operators
 Used to combine two comparison expressions into a single value. If this is your first time dealing with "Boolean Logic", it's a whole concept of its own. I recommend checking out [this guide](https://www.codecademy.com/resources/blog/what-is-boolean-logic/). In summary, logical operators are used to see if *all* of a set of comparisons are true, *any* of the comparisons are true, or if the comparison is *not* true.
@@ -190,7 +190,7 @@ Used to combine two comparison expressions into a single value. If this is your 
 
 ![An infographic breaking down the parts of a logical expression](../../_media/03_02_diagram-js-logical-expression.jpg)
 <br >
-<small>In the above example, "Expression 1" evaluates to <code>false</code> and "Expression 2" evaluates to <code>true</code>. Because "Expression 3" uses the <code>or</code> operator, only one of the two underlying expressions need to be true. Therefore, "Expression 3" also evaluates to <code>true</code>. 
+<sub><sup>In the above example, "Expression 1" evaluates to <code>false</code> and "Expression 2" evaluates to <code>true</code>. Because "Expression 3" uses the <code>or</code> operator, only one of the two underlying expressions need to be true. Therefore, "Expression 3" also evaluates to <code>true</code>.</sup></sub>
 
 ### Functions
 Functions are a bit of prewritten code that you can invoke to preform the same code over and over. This code could come with the language, be written by you, or be written by someoone else and brought into your code.
