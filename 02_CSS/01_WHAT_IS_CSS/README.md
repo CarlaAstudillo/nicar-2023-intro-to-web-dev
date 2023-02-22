@@ -9,7 +9,7 @@ A few things CSS can do are:
 - Positioning
 - Spacing
 
-<sub><sup><em>(there's more, but these are the basics)</em></sup></sub>
+<em>(there's more, but these are the basics)</em>
 
 ## The World Without CSS
 
@@ -17,13 +17,13 @@ It's easiest to see the effect of CSS by [turning it off](https://css-tricks.com
 
 ### Wikipedia
 ![Wikipedia without CSS](https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/04/s_601945040BCA3610D759145A4442799C97B904D9A9F8326DD30FDF0CF48A96B7_1555363400264_wikipedia-compare.jpg?ssl=1)
-<sub><sup>The Wikipedia homepage with CSS (left) and without CSS (right).</sup></sub>
+<em>The Wikipedia homepage with CSS (left) and without CSS (right).</em>
 
 
 ### GitHub
 <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/04/s_601945040BCA3610D759145A4442799C97B904D9A9F8326DD30FDF0CF48A96B7_1555180613247_guthub-repo-single.jpg" width="50%">
 <br />
-<sub><sup>A GitHub repository page in a logged out state.</sup></sub>
+<em>A GitHub repository page in a logged out state.</em>
 
 <br />
 

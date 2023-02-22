@@ -27,7 +27,7 @@ You can even ask it the same question in a language your more comfortable with (
 <br>
 
 
-So the remainder of this section won't be a lesson like the others, it'll be a reference guide where I explain the JavaScript syntax and vocabulary for the concepts you learned in the previous section. But JavaScript is an everchanging language with usually more than one way to do something, so I encourage you to go out into the world of the internet and find alternatives, improvements, and strangely strong held opinions.
+So the remainder of this section won't be a lesson like the others, it'll be a reference guide where I explain the JavaScript syntax and vocabulary for the concepts you learned in the previous section. But JavaScript is an everchanging language with usually more than one way to do something, so I encourage you to go out into the world of the internet and find alternatives, improvements, and (strangely) strongly held opinions.
 
 ## JavaScript Taxonomy: Blocks, Statements, and Expressions
 As alluded to earlier, all JavaScript statements should end in a semicolon (`;`), but what is a "statement"? In JavaScript, code is organized into three levels: 
@@ -44,7 +44,7 @@ JavaScript has it's own rules for naming things in code. Note that you can alway
 - They must begin with a letter, underscore (`_`), or dollar sign (`$`).
 - After the first character, they can also contain numbers (0-9).
 - They are case-sensitive, so `myVariable` and `myvariable` are different things.
-- You cannot use the JavaScript keywords described in this section as names (e.g. var, function, if, etc.). Though you can use them as part of a larger name (e.g. `myvar`, `ifMobile`, etc.).
+- You cannot use the JavaScript keywords described in this section as names (e.g. `var`, `function`, `if`, etc.). Though you can use them as part of a larger name (e.g. `myvar`, `ifMobile`, etc.).
 
 ### Conventions & Casing
 The four rules above are required for your code to work, but there's also a few rules that are considered good practice or convention.
@@ -68,7 +68,7 @@ Define objects with curly braces* (`{}`).
 ```javascript
 {}
 ```
-<sub><sup>*Like many things in JavaScript, the meaning of code is contextual. Curly braces signify <em>both</em> a block and an object. If you start filling it with properties, it's an object. If you fill it with statements, it's a block. If you don't do either, it depends on how it's being used.</sup></sub>
+<em>*Like many things in JavaScript, the meaning of code is contextual. Curly braces signify BOTH a block and an object. If you start filling it with properties, it's an object. If you fill it with statements, it's a block. If you don't do either, it depends on how it's being used.</em>
 
 Inside the curly braces, define each property with a unique name as a string. If the name follows the rules for naming explained above, you can skip using the quotes.
 
@@ -176,7 +176,7 @@ Used to compare two values and return a boolean.
 | Greater Than or Equal To | `>=` | `2 >= 2` 
 | Less Than or Equal To | `<=` | `5 <= 3`
 
-<sub><sup>*You might see a different kind of (in)equality operator with one less equal sign (`==` vs `===` and `!=` vs `!==`). The short answer is don't use them. In nearly five years of professional programming, I've never purposefully used the shorter operator.</sup></sub>
+<em>*You might see a different kind of (in)equality operator with one less equal sign (`==` vs `===` and `!=` vs `!==`). The short answer is don't use them. In nearly five years of professional programming, I've never purposefully used the shorter operator.</em>
 
 ### Logical Operators
 Used to combine two comparison expressions into a single value. If this is your first time dealing with "Boolean Logic", it's a whole concept of its own. I recommend checking out [this guide](https://www.codecademy.com/resources/blog/what-is-boolean-logic/). In summary, logical operators are used to see if *all* of a set of comparisons are true, *any* of the comparisons are true, or if the comparison is *not* true.
@@ -189,8 +189,7 @@ Used to combine two comparison expressions into a single value. If this is your 
 <br >
 
 ![An infographic breaking down the parts of a logical expression](../../_media/03_02_diagram-js-logical-expression.jpg)
-<br >
-<sub><sup>In the above example, "Expression 1" evaluates to <code>false</code> and "Expression 2" evaluates to <code>true</code>. Because "Expression 3" uses the <code>or</code> operator, only one of the two underlying expressions need to be true. Therefore, "Expression 3" also evaluates to <code>true</code>.</sup></sub>
+<em>In the above example, "Expression 1" evaluates to <code>false</code> and "Expression 2" evaluates to <code>true</code>. Because "Expression 3" uses the <code>or</code> operator, only one of the two underlying expressions need to be true. Therefore, "Expression 3" also evaluates to <code>true</code>.</em>
 
 ### Functions
 Functions are a bit of prewritten code that you can invoke to preform the same code over and over. This code could come with the language, be written by you, or be written by someoone else and brought into your code.
