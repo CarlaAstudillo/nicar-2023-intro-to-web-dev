@@ -4,9 +4,9 @@ Now that you've mastered the basic concepts of programming, learning any languag
 
 In programming, the **vocabulary** of a language are the keywords and symbols a language uses to refer to programming concepts. For example, the word `const` is JavaScript vocabulary for a variable, while Python doesn't have such a keyword.
 
-The **syntax** of a language is how the vocabulary is strung together to create meaning. Putting a `+` sign between two numbers denotes an arithmetic operation, but putting the same symbol between two strings denotes a string operation. In both cases the vocabulary is the same, but the syntax of the language creates a different outcome (i.e. produces a different meaning). Then there's just the syntaxes of formality – in English you end sentences with a puncuation mark, in JavaScript you end it with a semicolon (`;`).
+The **syntax** of a language is how the vocabulary is strung together to create meaning. Putting a `+` sign between two numbers denotes an arithmetic operation, but putting the same symbol between two strings denotes a string operation. In both cases the vocabulary is the same, but the syntax of the language creates a different outcome (i.e. produces a different meaning). Then there's just the syntaxes of formality – in English you end sentences with a puncuation mark, in JavaScript you end each statement with a semicolon (`;`).
 
-Vocabulary and syntax are concepts that you learn through practice, and unlike riding a bike, you do forget them if you haven't used them in a while, so it's important to understand how to find them again. This is why I've bolded so many concepts in the programming section like "defining a varible" or "invoking a function". These concepts are almost universal in programming languages and using them to ask questions of others or the internet is 50% of the battle.
+Vocabulary and syntax are concepts that you learn through practice, and unlike riding a bike, you do forget them if you haven't used them in a while, so it's important to understand how to find them again. This is why I've bolded so many concepts in the programming section like "defining a varible" or "invoking a function". These words are universal in programming languages and using them to ask questions of others or the internet is 50% of the battle.
 
 Traditionally, this is the part where I teach you how to Google:
 ![Asking Google how to define a variable in JavaScript](../../_media/03_02_ask-google.jpg)
@@ -26,6 +26,16 @@ You can even ask it the same question in a language your more comfortable with (
 
 So the remainder of this section won't be a lesson like the others, it'll be a reference guide where I explain the JavaScript syntax and vocabulary for the concepts you learned in the previous section. But JavaScript is an everchanging language with usually more than one way to do something, so I encourage you to go out into the world of the internet and find alternatives, improvements, and strangely strong held opinions.
 
+## JavaScript Taxonomy: Blocks, Statements, and Expressions
+As alluded to earlier, all JavaScript statements should end in a semicolon (`;`), but what is a "statement"? In JavaScript, code is organized into three levels: 
+- **Blocks**: A collection of statements enclosed in curly braces {}. Blocks are used to group statements together, and are used in decisions and loops.
+- **Statements**: Complete units of code that perform an action. Typically, statements end with a semicolon (`;`). 
+- **Expressions**: A combination of values, variables, and operators that produces a new value. Expressions can be (and sometimes must be) wrapped in parenthesis (`()`), but usually don't *need* to be.
+
+![An infographic breaking down blocks, statements, and expressions](../../_media/03_02_diagram-js-taxonomy.jpg)
+
+JavaScript is *usually* smart enough to figure out where you meant to put the semicolons, but not always so it's generally best practice to put them yourself. In practice, most modern programmers use tools to add them in for us (there's never a problem too small to automate).
+
 ## Naming
 JavaScript has it's own rules for naming things in code. Note that you can always create strings which have no rules to the characters used in them. But in cases where you have to give a name to a function or variable, these are the rules
 - They must begin with a letter, underscore (`_`), or dollar sign (`$`).
@@ -38,16 +48,7 @@ The four rules above are required for your code to work, but there's also a few 
 - They should be descriptive and not too long.
 - You should use camelCase for variable and function names (e.g. `myVariableName`) instead of underscores or hyphens.
 
-## Statements & Semicolons
-As alluded to earlier, all JavaScript statements should end in a semicolon (`;`). In JavaScript, a statement is any bespoke unit of instruction. This can get a little complicated before you understand the details of the language, but the easy definition is each line of code.
-```javascript
-num = 5 + 5;
-alert("This is a function");
-```
-
-JavaScript is *usually* smart enough to figure out where you meant to put the semicolons, but not always so it's generally best practice to put them yourself. In practice, most modern programmers use tools to add them in for us (there's never a problem too small to automate).
-
-## Types
+## Value Types
 | Type  | Syntax | Example |
 | ------------- | ------------- | ------------- |
 | String | Wrapped in quotes (like `"` or `'`), or backticks. Must use the same symbol to start and end.  | `"Hello World"`, `'He said "hello"'`. 
@@ -60,26 +61,22 @@ JavaScript is *usually* smart enough to figure out where you meant to put the se
 | Object | See "Objects" below | 
 
 ## Objects
-Define objects with curly braces (`{}`)
+Define objects with curly braces* (`{}`). 
 ```javascript
 {}
 ```
+<small>*Like many things in JavaScript, the meaning of code is contextual. Curly braces signify <em>both</em> a block and an object. If you start filling it with properties, it's an object. If you fill it with statements, it's a block. If you don't do either, it depends on how it's being used.</small>
 
-Inside the curly braces, define each property with a unique name (which can either be a string or just some loose text as long as that text follows the rules for naming).
-```javascript
-{
-  displayName: "Adel",
-  age: 24,
-  "City of Birth": "Cairo"
-}
-```
+Inside the curly braces, define each property with a unique name as a string. If the name follows the rules for naming explained above, you can skip using the quotes.
+
+![An infographic breaking down the parts of an object](../../_media/03_02_diagram-js-object.jpg)
 
 To refer to an object's properties you can use dot notation in which you write the name of the object (see "Variables"), then a period (`.`), and finally the name of the property. 
 ```javascript
 person.displayName // "Adel"
 ``` 
 
-If you made the property a string instead, however, you have to refer to it using bracket notation in which you write the name of the object, then square brackets (`[]`) wrapping the string used to name the property.
+If you made the property a string instead, however, you have to refer to it using bracket (`[]`) notation like so:
 ```javascript
 person["City of Birth"] // "Cairo"
 ```
@@ -109,12 +106,10 @@ myArr.join("|"); // "1|2|3|4|6"
 If you want to learn more about all the ways you can manipulate an array (or how something is possible), try searching for it on a search engine or AI langauge model.
 
 ## Variables
-You saw this in the Chat-GPT example above, but to declare a variable in JavaScript start with a variable keyword (either `let` or `const`), then the name of the varible (see "Naming"). To assign the variable (which you can do on the same line in JavaScript), follow up the declaration using an assignment operator, and finally the value of the variable (which can be of any type, see "Types").
+To declare a variable in JavaScript start with a variable keyword (either `let` or `const`), then the name of the varible (see "Naming"). To assign the variable (which you can do on the same line in JavaScript), follow up the declaration using an assignment operator, and finally the value of the variable (which can be of any type, see "Value Types").
 
-```javascript
-const name = "Jeon So-yeon";
-let age = 24;
-```
+
+![An infographic breaking down the parts of variable declaration and assignment statement](../../_media/03_02_diagram-js-variable.jpg)
 
 You can also set variables (or object properties) equal to other variables and it will make a copy of the value and save it in the new variable. Avoid doing this with objects (and arrays and functions), as it could have unintended consequences if you don't learn more about this.
 
@@ -127,6 +122,8 @@ const singer = {
 }
 
 singer.name; // "Jeon So-yeon"
+
+const otherSinger = singer; // Avoid this!!
 ```
 
 ### `let` vs `const`
@@ -179,32 +176,34 @@ Used to compare two values and return a boolean.
 <small>*You might see a different kind of (in)equality operator with one less equal sign (`==` vs `===` and `!=` vs `!==`). The short answer is don't use them. In nearly five years of professional programming, I've never purposefully used the shorter operator.</small>
 
 ### Logical Operators
-Used to combine two comparisons into a boolean. If this is your first time dealing with "Boolean Logic", it's a whole concept of its own. I recommend checking out [this guide](https://www.codecademy.com/resources/blog/what-is-boolean-logic/). In summary, logical operators are used to see if *all* of a set of comparisons are true, *any* of the comparisons are true, or if the comparison is *not* true.
+Used to combine two comparison expressions into a single value. If this is your first time dealing with "Boolean Logic", it's a whole concept of its own. I recommend checking out [this guide](https://www.codecademy.com/resources/blog/what-is-boolean-logic/). In summary, logical operators are used to see if *all* of a set of comparisons are true, *any* of the comparisons are true, or if the comparison is *not* true.
 | Type  | Syntax | Example |
 | ------------- | ------------- | ------------- |
 | Not | `!`  | `!true`
 | And | `&&` | `score < 80 && score > 70` 
 | Or | `\|\|` | `alcohol === null \|\| age > 21`
 
+<br >
+
+![An infographic breaking down the parts of a logical expression](../../_media/03_02_diagram-js-logical-expression.jpg)
+<small>In the above example, "Expression 1" evaluates to <code>false</code> and "Expression 2" evaluates to <code>true</code>. Because "Expression 3" uses the <code>or</code> operator, only one of the two underlying expressions need to be true. Therefore, "Expression 3" also evaluates to <code>true</code>. 
+
 ### Functions
 Functions are a bit of prewritten code that you can invoke to preform the same code over and over. This code could come with the language, be written by you, or be written by someoone else and brought into your code.
 
-To **invoke** a function use it's name and supply arguments in parenthesis (`()`).
+To **invoke** a function use it's name and supply arguments in parenthesis (`()`) (or lea)
 
+![An infographic breaking down the parts of a function invocation](../../_media/03_02_diagram-js-invoke-function.jpg)
+
+To **define** a function, use the keyword `function` and create a new block which will be executed when the function is invoked. Use the `return` keyword in the block to have the result of invoking this function return a value. You can then save these returns as new variables (see "Assigning From Returns" below).
+
+![An infographic breaking down the parts of defining a function](../../_media/03_02_diagram-js-define-function.jpg)
+
+
+You can also use the keyword `return` by itself to end execution early or to return a particular value. If you don't use `return`, execution will end after the last statement and nothing will be returned.
 ```javascript
-myFunction(1, "Hello", myVar);
-
-myFunctionWithoutArgs();
-```
-
-To **define** a function, use the keyword `function`. Wrap the function's execution code in curly braces (`{}`), and use the keyword `return` by itself to end execution early or to return a particular value. If you don't use `return` execution will end after the last line and nothing will be returned.
-```javascript
-function addition(a, b){
-  return a + b;
-}
-
 function greet(age){
-  if(age < 21){
+  if(age < 21) {
     alert("You're not old enough!")
     return;
   }
@@ -214,7 +213,7 @@ function greet(age){
 ```
 
 ### Methods
-Methods are functions that are contained inside of an object. They are defined like any other property:
+When the property of an object is a function, it's called a method. They are defined like any other property and function:
 ```javascript
 const dog = {
   color: "gray",
@@ -225,25 +224,93 @@ const dog = {
 ```
 
 And they are invoked by combining dot notation (see "Objects") and the usual way of invoking a function:
-```javascript
-dog.bark();
-```
 
-### Assignment From Returns
-As explained above, the assignment operator can be used to assign a value to a variable. But you can also preform an operation and save the result in a variable:
+![An infographic breaking down the parts of a method invocation](../../_media/03_02_diagram-js-invoke-method.jpg)
+
+
+### Assignment From Return Value
+As explained above, the assignment operator can be used to assign a value to a variable. But you can also preform an operation and save the value that function returns as a variable:
 ```javascript
 const sum = 5 + 10; // 15
 const name = "Anthony" + " " + "Bourdain"; // "Anthony Bourdain"
 const value = Math.sqrt(4); // 2
 ```
 
-## Decisions
-*Still needs to be written...*
+### "Chaining" Methods
+One common characteristic of methods is that they can be **chained** or called one after another. For example, arrays have the `.join` method which returns a string with all of the text in an array combined in a single string with a delimeter passed in as an argument. Strings have a method called `.replace` which replaces the first instance of a particular search value with a replacement value. Because of that, both of these code snippets produce the same output
+```javascript
+const example = [1, 2, 3, 4];
+
+/* Without Chaining */
+const asString = example.join('|');
+const withReplace = asString.replace(1, 'H');
+alert(withReplace); // "H|2|3|4"
+
+/* With Chaining */
+alert(
+  example
+    .join('|')
+    .replace(1, 'H')
+);
+```
+
+## Conditionals
+In JavaScript, decisions are often called **conditionals**. They are coded using `if/else` statements. All decisions must start with the javascript keyword `if`. Follow that up with something called a **condition**. Conditions are simply booleans or expressions that return a boolean that is wrapped in parenthesis (`()`). Finally, create a new block (`{}`). The statements in the block following an if statement will only execute if the condition is true (technically if it's "truthy" but that's a concept for later). 
+
+![An infographic breaking down the parts of conditional](../../_media/03_02_diagram-js-conditional.jpg)
+
+Technically, all you need to make decisions in JavaScript is if statements, but there's two more concepts that are designed to make your life easier.
+
+### Else If
+Immediately after an `if` block, you can use the `else if` keywords in combination, followed by a condition, and another block. This block's statements will only be executed if the proceeding conditions were *not* met, but it's condition was. You can chain as many of these `else if` blocks as you want to cover as many conditions as necessary.
+
+```javascript
+if(noAlcohol) {
+  alert("Here you go!");
+} else if (age > 21){
+  alert("Here you go!");
+} else if (country === "Mexico"){
+  alert("Here you go!");
+}
+```
+
+### Else
+Immediately after an `if` or `else if` block, you can use the `else` keyword and start a new block. This block's statements will only be executed if none of the proceeding conditional blocks executed.
+
+```javascript
+if(noAlcohol) {
+  alert("Here you go!");
+} else if (age > 21){
+  alert("Here you go!");
+} else {
+  alert("No can do!");
+}
+```
 
 ## Loops
-*Still needs to be written...*
+Most languages have a few different ways to create code loops. In the interest of efficiency I'm going to show you the most versatile one, the `for...of` loop.
+
+![An infographic breaking down the parts of for of loop](../../_media/03_02_diagram-js-loop.jpg)
+
+The `for...of` loop **iterates** or cycles through each item in an array and runs the code in the attached block. While executing statements in that block, you have access to a new variable (which you declare in the `for...of` statement). This new variable represents the item from the array in the current iteration.
+
+Take this basic example which will alert each of the three names one by one:
+```javascript
+const names = ["Eren", "Mikasa", "Armin"];
+
+for(name of names) {
+  alert("Now looking at " + name);
+}
+```
+
+But what if you don't have an array to iterate though? What if you simply want to loop something ten times? The reality is that's fairly rare, but not unheard of. While there's other loops to use in those situations, there's actually no harm in *creating* a new array to accomplish that.
+
+To create a loop where the variable is an integer from 0 to X, simply use this code replacing the value of `length` with a number one higher than your desired upper limit (e.g. for a loop from 0 – 10, use a length of 11):
+```javascript
+for(num of Array.from({ length: 5 }).keys()){
+  alert(num);
+}
+```
 
 ## Excercise
-*Still needs to be written...*
-
-*Write the grading script you designed in the previous section in JavaScript.*
+In the previous section, you used Scratch to design a script that grades a set of test scores. Now, translate that design into JavaScript.

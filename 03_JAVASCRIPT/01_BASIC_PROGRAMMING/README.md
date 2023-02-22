@@ -26,22 +26,21 @@ In order to design a script, you must first understand how to think like a compu
 | Types | The basic building blocks of programming | `5` 
 | Variables | A system for keeping track of values with unique labels | A user's "age"
 | Operations | The actions preformed to manipulate a computer system | Adding two numbers
-| Decisions | Branching paths depending on whether something is true | Do X if 5 is greater than 10
+| Conditionals | Branching paths depending on whether something is true (i.e. making a decision) | Do X if 5 is greater than 10
 | Loops | Repeating code until stopped | Do X for every item in this list
 | Events | Triggers for your code | Do X when a user hits the spacebar
 
-### Types
+### Values
 
-In programming, there are a few basic "types" to use. The most commonly used types are:
+In programming, there are a few basic "values" to use. The most commonly used types of values are:
 - **String:** Represent words and text, like the phrase "Hello World" and the letter "B".
 - **Number:** Represent numbers. Integers and rational numbers with a decimal can sometimes be considered different types depending on the language, but in practical JavaScript, you don't need to worry about that.
 - **Boolean:** Represent truth or falsity. The concept of whether five is greater than ten or if a checkbox is currently checked is represented by a boolean. There are only two possible values for a boolean: `true` or `false`.
 - **Undefined:** Represents a value that has never previously been defined. This will make more sense as we discuss variables and objects. Not all languages have this type, but JavaScript does.
 - **Null/None:** Represents the deliberate absence of a value. Whereas an age of `0` means the user is not born, and an age of `undefined` means the user hasn't answered the question, an age of `null` could mean the user has deliberatly decided not to answer the question.
-- **Array:** Represent a collection of types. Imagine a whole list of scores. Each score might be a number, but if you wanted to combine them all into one entity you would use an array.
+- **Array:** Represent a collection of values. Imagine a whole list of scores. Each score might be a number, but if you wanted to combine them all into one entity you would use an array.
 - **Function:** Represent a piece of code that can be invoked. See "operations" for more.
-- **Object:** Represents a more fluid organizational tool. It's a way to collect a series of types tied to keywords. Doing this creates what's called a **property**. For example, you could represent an age as a number and a name as a string. But to combine those types into a more complex person, you would use an object with an age and name property. Properties can be any of the types listed above, including arrays, functions, and even another object.
-
+- **Object:** Represents a more fluid organizational tool. It's a way to collect a series of values tied to keywords. Doing this creates what's called a **property**. For example, you could represent an age as a number and a name as a string. But to combine those values into a more complex person, you would use an object with an age and name property. Properties can be any of the value types listed above, including arrays, functions, and even another object.
 
 _Note: Technically in JavaScript, an Array is an object, but many programming languages do separate the two. For a beginner, it's okay to think of these two as separate types, but just keep this fact in the back of your head for advanced JavaScript learning one day._
 
@@ -52,7 +51,7 @@ In programming varaibles are a way for you to keep track of all the types that c
 In [Scratch](https://scratch.mit.edu/projects/editor/), make a new variable by clicking "Make a Variable", and call it "score". This is how you declare it. Then use the slider options to set a value to it, this is how you assign it. 
 
 ### Operations
-Operations are the things you can ask the computer to do. If types are the "nouns" or programming, think of operations as the "verbs". There are three kinds of operations:
+Operations are the things you can ask the computer to do. If values are the "nouns" or programming, think of operations as the "verbs". There are three kinds of operations:
 - Basic Operations: Use operators to preform basic calculations and tests for (in)equalities. There are a number of operators including:
   - Assignment Operators: Used to assign a value to a variable (e.g. `age = 32`)
   - Arithmetic Operators: Used to do basic mathematical calculations (e.g. `5 * 2`)
@@ -69,7 +68,7 @@ This may seem obvious, but operations can **return** a value after preforming th
 #### Excercise
 In [Scratch](https://scratch.mit.edu/projects/editor/), use the "Set variable" operation block to set a custom value for your score. Then combine that block with the basic operator blocks like "+" or "-". Once you're comfortable, you can play with some of the function blocks like "pick a random number" or "sqrt". Then combine a number of these operations into a function of your own. In Scratch, functions are called "blocks".
 
-### Decisions
+### Conditionals
 Computers can make decisions by evaluating a comparison and then running statements if that condition is met.
 
 You might not realize it, but in many ways your brain works in a similiar way. If you're a bartender and someone comes up to you to ask for a drink, there's a number of decisions you have to make. 
@@ -84,7 +83,7 @@ You might not realize it, but in many ways your brain works in a similiar way. I
 This is just a basic example of a decision tree you might take if you were building a bartending robot, but in reality you could add dozens of more decisions here. Are they on a list of problem clientele? Do they have an outstanding tab? Do they look like they should be cut off? Then your technical lead tells you there's a new client for your bartending robot in Mexico where the drinking age is 18, and suddenly you have to add more decisions depending on where the robot is located.
 
 #### Excercise
-In [Scratch](https://scratch.mit.edu/projects/editor/), use the decision blocks under "Control" to build a test grading robot which hands out letter grades based off our `score` variable. We'll go with a classic grading scale of:
+In [Scratch](https://scratch.mit.edu/projects/editor/), use the conditional blocks under "Control" to build a test grading robot which hands out letter grades based off our `score` variable. We'll go with a classic grading scale of:
   - A: 100 - 90
   - B: 89 - 80
   - C: 79 - 70
@@ -125,7 +124,7 @@ In [Scratch](https://scratch.mit.edu/projects/editor/), add a event to the top o
 ## Putting it all together
 Now that you know all the building blocks available to you in programming. Design a script which includes a function called `grade`. The `grade` function should `say` a letter grade based on the average score in the `scores` list (e.g. "A" if the average score in the list is a 95). Then add a trigger to run the grade function when a certain key is pressed.
 
-Bonus: Be a benevolent grader, and drop their lowest grade. We all have bad days. Hint: You can make decisions inside of loops.
+Bonus: Be a benevolent grader, and drop their lowest grade. We all have bad days. Hint: You can make conditionals inside of loops.
 
 [*You can check out the final working script (including the bonus) here.*](https://scratch.mit.edu/projects/807109759)
 
