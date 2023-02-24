@@ -36,15 +36,15 @@ Most of the time, you have some data locally that you want to load on your page.
 
 We need an extra setup step. If it's not already installed on your browser, install the [Web Server for Chrome extension](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related?hl=en).
 
-![The Web Server for Chrome extension.](./img/loading-data/web-server.jpg)
+![The Web Server for Chrome extension.](../../_media/03_03_web-server.jpg)
 
 Once installed, launch it. A pop-up may tell you that the extension is no longer supported. It's fine. Open it anyway.
 
-![Open the Chrome extension even if it's no longer supported.](./img/loading-data/open-anyway.jpg)
+![Open the Chrome extension even if it's no longer supported.](../../_media/03_03_open-anyway.jpg)
 
 The last thing to do is to choose the folder in which you have your HTML and JS code.
 
-![Local server started.](./img/loading-data/local-server-started.jpg)
+![Local server started.](../../_media/03_03_local-server-started.jpg)
 
 Click on the web server URL (http://127.0.0.1:8887 in my case, you might have something slightly different), open the console, and you should see "Hi!" being logged.
 
@@ -56,7 +56,7 @@ For the data, we are going to use the [per capita C02 emissions from Our World i
 
 Click on the "Download" tab at the bottom, then on "Full data". I also put the data in this repository. You can find it at "./03_JAVASCRIPT/03_LOADING_DATA/data/co2.csv".
 
-![Our World in Data website.](./img/loading-data/our-world-data.jpg)
+![Our World in Data website.](../../_media/03_03_our-world-data.jpg)
 
 Move the file to your coding folder, and then add the code below to _loading-data.js_.
 
@@ -82,7 +82,7 @@ main();
 
 If you refresh your browser (with the URL from your local server), you should see your data being logged! That's amazing, right?
 
-![A CSV file loaded by the browser.](./img/loading-data/csv-loaded.jpg)
+![A CSV file loaded by the browser.](../../_media/03_03_csv-loaded.jpg)
 
 ## From a URL
 
@@ -94,7 +94,7 @@ I pushed the data in the repo. Here's its URL: https://raw.githubusercontent.com
 
 You can also find the URL directly on the repo GitHub page. Don't forget to click on the "Raw" button, to go to the raw data. Otherwise, it won't work.
 
-![A GitHub page showing a CSV file](./img/loading-data/data-github.jpg)
+![A GitHub page showing a CSV file](../../_media/03_03_data-github.jpg)
 
 Your code should look like this.
 
@@ -112,7 +112,7 @@ main();
 
 And you show see the being logged again, except this time, you retrieved it from the web! Don't worry about the "?token=..." in the url in this screenshot. Now that the repo is public, there's no need for a token anymore.
 
-![Data is loaded in a browser from a URL.](./img/loading-data/load-data-web.jpg)
+![Data is loaded in a browser from a URL.](../../_media/03_03_load-data-web.jpg)
 
 Be careful when loading data from the web. For your projects, only load data from servers that you control and own.
 
