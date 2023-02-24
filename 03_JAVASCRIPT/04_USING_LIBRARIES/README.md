@@ -38,7 +38,7 @@ main();
 
 In your browser, if you open the local link to your project (from the Web Server extension, something like http://127.0.0.1:8887/), you should see the CSV data being logged in the console.
 
-![An HTML file, a JavaScript file and some data are logged in the console of a browser.](./img/libraries-setup.jpg)
+![An HTML file, a JavaScript file and some data are logged in the console of a browser.](../../_media/03_04_libraries-setup.jpg)
 
 ## D3
 
@@ -46,11 +46,11 @@ D3 (Data-Driven Document) is a well-known library, very often used for data visu
 
 D3 is broken down into multiple modules and one that would be very useful for us is [d3-fetch](https://github.com/d3/d3-fetch). There's a function called _csv_ that "loads and parses a CSV file". Perfect for us!
 
-![The GitHub repository of d3-fetch.](./img/d3-csv.jpg)
+![The GitHub repository of d3-fetch.](../../_media/03_04_d3-csv.jpg)
 
 The best way to know how to use a library is to read the documentation. Very often, the instructions will be in the GitHub repository README. For the _csv_ function of the d3-fetch module, it's quite straightforward.
 
-![Instruction to use d3-fetch.](./img/installing-d3-fetch.jpg)
+![Instruction to use d3-fetch.](../../_media/03_04_installing-d3-fetch.jpg)
 
 In our HTML file, we first need to specify the type of our _load_data.js_ as a module.
 
@@ -93,7 +93,7 @@ You can see that each row of the CSV file became a JavaScript object, with the k
 
 That's perfect! An array of objects is easy to manipulate and very flexible to work with.
 
-![The csv function from d3-fetch fetches data from a CSV file.](./img/csv-fetched-data.jpg)
+![The csv function from d3-fetch fetches data from a CSV file.](../../_media/03_04_csv-fetched-data.jpg)
 
 Congrats! You now know how to use external libraries. A whole new world is at hand! :)
 
@@ -144,7 +144,7 @@ async function main() {
 main();
 ```
 
-![The data of a CSV is logged as a table in the browser console.](./img/simple-data-analysis-fetch.jpg)
+![The data of a CSV is logged as a table in the browser console.](../../_media/03_04_simple-data-analysis-fetch.jpg)
 
 In the table, we can see that the "Year" and the "Annual CO₂ emissions (per capita)" are strings. But to draw our chart, we need them to be numbers. With the methods _valuesToInteger_ and _valuesToFloat_, we can convert them easily.
 
@@ -165,7 +165,7 @@ main();
 
 Now, they are numbers!
 
-![The data of a CSV is converted to numbers with the simple-data-analysis library.](./img/simple-data-analysis-cleaning.jpg)
+![The data of a CSV is converted to numbers with the simple-data-analysis library.](../../_media/03_04_simple-data-analysis-cleaning.jpg)
 
 It's time to draw our chart.
 
@@ -198,7 +198,7 @@ main();
 
 If you reload the page, you'll see that there are a lot of countries in the data!
 
-![A chart showing the CO2 emissions per capita for many countries.](./img/chart-all-countries.jpg)
+![A chart showing the CO2 emissions per capita for many countries.](../../_media/03_04_chart-all-countries.jpg)
 
 It would be better to filter the data to keep only some of them.
 
@@ -224,6 +224,6 @@ simpleData
 
 Well, that's much better, right?
 
-![A chart showing the CO2 emissions for a few countries.](./img/chart-less-countries.jpg)
+![A chart showing the CO2 emissions for a few countries.](../../_media/03_04_chart-less-countries.jpg)
 
 And that's the end of the lesson! You used another JavaScript library to wrangle data. You can be proud of yourself! :)
