@@ -90,7 +90,7 @@ Now, how could we load data if it's hosted somewhere on the web? If we don't hav
 
 Easy! Just replace the relative path ("./co2.csv") by the URL pointing to the data you want to retrieve.
 
-I pushed the data in the repo. Here's its URL: https://raw.githubusercontent.com/CarlaAstudillo/nicar-2023-intro-to-web-dev/main/03_JAVASCRIPT/data/co2.csv?token=GHSAT0AAAAAABZZXWCAGZ2M6YFA5ET7JNBUY7SJGCQ.
+I pushed the data in the repo. Here's its URL: https://raw.githubusercontent.com/CarlaAstudillo/nicar-2023-intro-to-web-dev/main/03_JAVASCRIPT/data/co2.csv.
 
 You can also find the URL directly on the repo GitHub page. Don't forget to click on the "Raw" button, to go to the raw data. Otherwise, it won't work.
 
@@ -101,7 +101,7 @@ Your code should look like this.
 ```js
 async function main() {
   const response = await fetch(
-    "https://raw.githubusercontent.com/CarlaAstudillo/nicar-2023-intro-to-web-dev/main/03_JAVASCRIPT/data/co2.csv?token=GHSAT0AAAAAABZZXWCAGZ2M6YFA5ET7JNBUY7SJGCQ"
+    "https://raw.githubusercontent.com/CarlaAstudillo/nicar-2023-intro-to-web-dev/main/03_JAVASCRIPT/data/co2.csv"
   );
   const csv = await response.text();
   console.log(csv);
@@ -110,7 +110,7 @@ async function main() {
 main();
 ```
 
-And you show see the being logged again, except this time, you retrieved it from the web!
+And you show see the being logged again, except this time, you retrieved it from the web! Don't worry about the "?token=..." in the url in this screenshot. Now that the repo is public, there's no need for a token anymore.
 
 ![Data is loaded in a browser from a URL.](./img/loading-data/load-data-web.jpg)
 
