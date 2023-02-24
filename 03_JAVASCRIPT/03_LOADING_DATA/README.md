@@ -28,7 +28,7 @@ console.log("Hi!");
 
 Open your HTML file in your browser and open the console (in the top menu, click on "View", then "Developer", then "Developer tools", and choose the "Console" tab). If you see "Hi!" being logged, you are ready!
 
-![A code editor with HTML and JavaScript code. A browser with the console tab open.](./img/loading-data/data-setup.jpg)
+![A code editor with HTML and JavaScript code. A browser with the console tab open.](../../_media/03_03_data-setup.jpg)
 
 ## With a local file
 
