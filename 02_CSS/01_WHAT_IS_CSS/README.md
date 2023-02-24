@@ -9,7 +9,7 @@ A few things CSS can do are:
 - Positioning
 - Spacing
 
-<small><em>(there's more, but these are the basics)</em></small>
+<em>(there's more, but these are the basics)</em>
 
 ## The World Without CSS
 
@@ -17,13 +17,13 @@ It's easiest to see the effect of CSS by [turning it off](https://css-tricks.com
 
 ### Wikipedia
 ![Wikipedia without CSS](https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/04/s_601945040BCA3610D759145A4442799C97B904D9A9F8326DD30FDF0CF48A96B7_1555363400264_wikipedia-compare.jpg?ssl=1)
-<small>The Wikipedia homepage with CSS (left) and without CSS (right).</small>
+<em>The Wikipedia homepage with CSS (left) and without CSS (right).</em>
 
 
 ### GitHub
 <img src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2019/04/s_601945040BCA3610D759145A4442799C97B904D9A9F8326DD30FDF0CF48A96B7_1555180613247_guthub-repo-single.jpg" width="50%">
 <br />
-<small>A GitHub repository page in a logged out state.</small>
+<em>A GitHub repository page in a logged out state.</em>
 
 <br />
 
@@ -50,7 +50,7 @@ Let's take a moment to break down that code piece by piece using some key defini
 - **Value**: The setting you want to use for the chosen property. Each property has it's own set of accetable values.
 <br /><br />
 
-![An infographic breaking down each part of a a rule](../../_media/02_01_rule-infographic.jpg)
+![An infographic breaking down each part of a a rule](../../_media/02_01_diagram-css-rule.jpg)
 <br /><br />
 
 In the following sections we'll break down each of these in more detail.
@@ -69,35 +69,3 @@ p {
   color: blue;
 }
 ```
-
-
-<br /><br /><br /><br />
-
-_Editor's Note: We can include the below in section 4_
-
- The most common way is using a link tag with a reference to where the stylesheet is being hosted. The most common place to host it is as a file right next to your HTML file.
-
-Assuming you have a file structure like this:
-```
-my-project/
-├─ index.html
-├─ stylesheet.css
-```
-
-Then you would load the stylesheet by adding the following line to the `<head>` element of your `index.html` file,
-
-```
-  <head>
-    ...
-
-    <link 
-      type="text/css" 
-      rel="stylesheet" 
-      href="./stylesheet.css"
-    />
-
-    ...
-  </head>
-```
-
-The `type` and `rel` attributes will always be the same, but the `href` attribute can be any URL (either relative or absolute). You can read more about [crafting a URL here](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL).
