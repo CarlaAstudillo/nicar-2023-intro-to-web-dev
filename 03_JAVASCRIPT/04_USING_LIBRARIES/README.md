@@ -36,7 +36,7 @@ async function main() {
 main();
 ```
 
-In your browser, if you open the local link to your project (something like http://127.0.0.1:8887/), you should see the CSV data being logged in the console.
+In your browser, if you open the local link to your project (from the Web Server extension, something like http://127.0.0.1:8887/), you should see the CSV data being logged in the console.
 
 ![An HTML file, a JavaScript file and some data are logged in the console of a browser.](./img/libraries-setup.jpg)
 
@@ -44,7 +44,7 @@ In your browser, if you open the local link to your project (something like http
 
 D3 (Data-Driven Document) is a well-known library, very often used for data visualization. But it also has a lot of very useful functions to wrangle data.
 
-D3 is broken down in multiple modules and one that would be very useful for us is [d3-fetch](https://github.com/d3/d3-fetch). There's a function called _csv_ that "loads and parses a CSV file". Perfect for us!
+D3 is broken down into multiple modules and one that would be very useful for us is [d3-fetch](https://github.com/d3/d3-fetch). There's a function called _csv_ that "loads and parses a CSV file". Perfect for us!
 
 ![The GitHub repository of d3-fetch.](./img/d3-csv.jpg)
 
@@ -70,7 +70,7 @@ Now, we can replace _fetch_ with _csv_ on line 4. We can also rename _response_ 
 
 There's no need for _const csv = await response.text()_ anymore, because the _csv_ function is doing all of the work for us!
 
-In the console.log, we can replace our old _csv_ variable by our brand new _data_ variable.
+In the console.log, we can replace our old _csv_ variable by our brand-new _data_ variable.
 
 Your JavaScript code should look like this now.
 
@@ -89,7 +89,7 @@ main();
 
 And if you reload the page, you can see that the data is not a big string now. It's a list of 26,915 items! And by clicking on the little arrows (outlined in red), you can inspect each one.
 
-You can see that each row of the CSV file became an JavaScript object, with the keys of the object being the CSV columns names.
+You can see that each row of the CSV file became a JavaScript object, with the keys of the object being the CSV column names.
 
 That's perfect! An array of objects is easy to manipulate and very flexible to work with.
 
@@ -101,7 +101,7 @@ Congrats! You now know how to use external libraries. A whole new world is at ha
 
 Let's play with another library: [simple-data-analysis](https://github.com/nshiab/simple-data-analysis.js). Full disclaimer: I am its maintainer. (^\_^)
 
-If we check the documentation, we can see that there're a lot of useful functions to clean, analyze and visualize data.
+If we check the documentation, we can see that there are a lot of useful functions to clean, analyze and visualize data.
 
 Let's create a chart with it!
 
@@ -124,11 +124,13 @@ We also create a div with the id "dataviz". We will put the chart in it.
 </html>
 ```
 
-In our JavaScript file, we can now create a new instance of the SimpleData class.
+In our JavaScript file, we can now create a new instance of the SimpleData class, from the sda variable (short for simple-data-analysis).
 
 To load our data, we can use the method loadDataFromUrl and pass the relative path to our file _co2.csv_. But it could be an external URL as well.
 
-The library will fetch the data and parse it. To see the result, we can call the showTable method. And a table with our data will appear in the console. Quite handy!
+The library will fetch the data, parse it and keep it in memory in the _simpleData_ variable.
+
+To see the result, we can call the showTable method. And a table with our data will appear in the console. Quite handy!
 
 ```js
 async function main() {
@@ -146,6 +148,21 @@ main();
 
 In the table, we can see that the "Year" and the "Annual CO₂ emissions (per capita)" are strings. But to draw our chart, we need them to be numbers. With the methods _valuesToInteger_ and _valuesToFloat_, we can convert them easily.
 
+```js
+async function main() {
+  const simpleData = await new sda.SimpleData().loadDataFromUrl({
+    url: "./co2.csv",
+  });
+
+  simpleData
+    .valuesToInteger({ key: "Year" })
+    .valuesToFloat({ key: "Annual CO₂ emissions (per capita)" })
+    .showTable();
+}
+
+main();
+```
+
 Now, they are numbers!
 
 ![The data of a CSV is converted to numbers with the simple-data-analysis library.](./img/simple-data-analysis-cleaning.jpg)
@@ -154,7 +171,7 @@ It's time to draw our chart.
 
 First, we remove our _showTable_ call. We don't need it anymore.
 
-Then we retrieve our div _dataviz_ by using _document.querySelector_. We will replace its content (_innerHTML_), with our chart.
+Then we retrieve our div _dataviz_ by using _document.querySelector_. We will replace its content (_innerHTML_) with our chart.
 
 We call the method _getChart_ on our SimpleData instance to create a line chart, with "Year" as x and "Annual CO₂ emissions (per capita)" as y. The type of the chart is "line" and we want to have a different color for each "Entity".
 
@@ -209,4 +226,4 @@ Well, that's much better, right?
 
 ![A chart showing the CO2 emissions for a few countries.](./img/chart-less-countries.jpg)
 
-And that's the end of the lesson! You used another JavaScript library to wrangle with data. You can be proud of yourself!
+And that's the end of the lesson! You used another JavaScript library to wrangle data. You can be proud of yourself! :)
