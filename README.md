@@ -19,15 +19,21 @@ You should already have these installed on your Mac stations.
 
 ## Schedule
 
-1. [HTML](01_HTML)
-2. [CSS](02_CSS)
-3. [Javascript](03_JAVASCRIPT)
-
--- Lunch break -- 
-
-4. [Putting it all together](04_PUT_IT_ALL_TOGETHER)
-5. [Advanced Techniques](05_ADVANCED)
-
+- 9:15am: 01 – HTML
+- 10:15am: 02_01 – Intro to CSS
+- 10:30am: 02_02 – Selectors
+- 11:00am: 02_03 – Properties
+- 11:45am: 03_01 – Programming
+- 12:30pm: Break for lunch
+- 2:15pm: 03_02 – JavaScript Basics
+- 3:00pm: 03_03 – Loading Data
+- 3:30pm: 03_04 – Using Libraries
+- 4:00pm: 04 – Putting It Together
+- 5:30pm: Wrap Up (Introduce Advanced)
+  - 05_01 – GitHub
+  - 05_02 – Node
+  - 05_03 – Frameworks
+  - 05_04 – D3
 
 ## How to fetch Github
 First things first, you will need to fetch the class materials that you will need from a site called Github. The page that you are on currently is the Github repository for our class. Github is a platform where web developers can store, manage, track and control changes in code. It's great for collaboration. You will learn more about what it can do in the Advance Technique sections of our course.
