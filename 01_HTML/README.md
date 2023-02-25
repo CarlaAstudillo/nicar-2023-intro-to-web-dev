@@ -206,7 +206,8 @@ Attributes provide additional information about an element-- like a class, ID, t
 
 Values are what's assigned to a given attribute. These are placed inside quotation marks.
 
-<tag attribute="value">Content modified by the attribute</tag>
+![An image showing <p class="content">Lorem ipsum dolor sit</p>](../_media/01_diagram-html-element.jpg)
+
 
 Example: 
 
