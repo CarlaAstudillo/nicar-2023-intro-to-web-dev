@@ -40,4 +40,4 @@ First things first, you will need to fetch the class materials that you will nee
 
 However, for this class, you just simply fetch the materials by clicking the Code button in the top right of this Github repository. Click `Download ZIP` which will download the zip files of this whole repository into your local computer. Your files might be in the `Downloads` folder so make sure to move them to `Desktop` so you always know where they are.
 
-![Where you can manually download from a Github](01_HTML/01_HTML_example/images/github_download.png)
+![Where you can manually download from a Github](_media/github_download.png)
