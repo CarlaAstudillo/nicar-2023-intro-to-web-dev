@@ -333,6 +333,28 @@ Span tags are inline container tags that can apply to part of a text. Because th
 <p>This is a paragraph and the <span style="color:red;">span tag marks up part of the text.</span></p>
 ```
 
+**HTML Tables**
+
+These tags let us build a simple table with structured data. We use the tag `<table>` to define the table, `<tr>` to define table row, `<th>` to define table header and `<td>` to define a table cell. We can add an attribute like class to give it a class name.
+
+
+```
+<table class="myTable">
+  <tr>
+    <th>Column Header 1</th>
+    <th>Column Header 2</th>
+  </tr>
+  <tr>
+    <td>Row 1/Column 1</td>
+    <td>Row 1/Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2/Column 1</td>
+    <td>Row 2/Column 2</td>
+  </tr>
+</table>
+```
+
 **Comments**
 
 Comments are only visible in the page's source code but not rendered by the browser, therefore invisible to users. It is used to add notification, reminders and documentation to your code for you or your fellow coders. It begins with <!–– and the comment closes with ––>.
