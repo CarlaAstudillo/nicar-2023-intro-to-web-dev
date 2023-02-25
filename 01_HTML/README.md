@@ -1,6 +1,6 @@
 # HTML
 
-![Web site for the 1996 movie Space Jam](../_media/space_jam_site.gif)
+![Web site for the 1996 movie Space Jam](../_media/01_space_jam_site.gif)
 
 ## What is HTML?
 
@@ -8,7 +8,7 @@
 
 Think of it like the skeleton that makes up the structure of a website and holds the content.
 
-![Skeletons dancing](../_media/skeletons_dancing.jpeg)
+![Skeletons dancing](../_media/01_skeletons_dancing.jpeg)
 
 It's important to note that HTML is not a programming language-- it is a markup language that defines the structure of your site. 
 
@@ -18,7 +18,7 @@ You can see HTML in all of it's glory if you ever 'view the source' of a web sit
 
 One of the best tools you can use to learn code is to use your browser's Web Inspector. This can be used to inspect under the hood of your favorite site. You use this to see how it all works together.
 
-![What the web inspector looks like](../_media/web_inspector.png)
+![What the web inspector looks like](../_media/01_web_inspector.png)
 
 Go to a web site you want to inspect. You can turn on the Web Inspector using any browser. 
 
@@ -36,7 +36,7 @@ If you're using Firefox, you can open up the Web Inspector [this way](https://fi
 
 Ideally, your HTML, CSS and images files should be stored in the same folder with file names that DO NOT include spaces or special characters.
 
-![This is the HTML folder structure](../_media/folder_structure.png)
+![This is the HTML folder structure](../_media/01_folder_structure.png)
 
 For this class, you will be using [Visual Studio Code](https://code.visualstudio.com/) which should be installed in your computers. However, any plain text editor will do: [TextEdit](https://support.apple.com/guide/textedit/welcome/mac), which comes with Macs, [Notepad](https://fileinfo.com/software/microsoft/notepad), which comes with Microsoft, [Sublime Text](https://www.sublimetext.com/) and [Atom](https://atom.io/) are all good choices.
 
