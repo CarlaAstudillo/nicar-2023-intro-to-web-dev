@@ -4,10 +4,20 @@ We are now going to use everything we learned to make a simple website with an i
 
 ## Exercise #1: Set up the HTML page with a image
 
-Set up the following:
+If you need a refresher, you go back to the HTML section.
 
-* A Chrome web server
-* The HTML body template (You can copy and paste from here)
+* Set up the HTML body template (You can copy and paste from [`here`](../00_EXCERCISES/02_HTML_EXAMPLE/index.html))
 * Add a title at the top, with a subhead, some text explaining what the site is about and a link.
-* Add an image to the page (hint on how to do that here)
-* Add a simple HTML table with a class name (hint on how to do that here)
+* Add an image to the page
+* Add a simple HTML table with a class name
+
+## Exercise #2: Make it pretty using CSS
+
+If you need a refresher, you go back to the CSS section.
+
+* Create a CSS file and connect it to your HTML file
+* Change the background color
+* Change the fonts
+* Center the images and the div elements on the page
+
+## Load in data into the HTML table using Javascript
