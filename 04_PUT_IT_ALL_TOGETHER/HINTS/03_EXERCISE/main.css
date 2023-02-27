@@ -1,91 +1,91 @@
-body{
-    background-color: #EDDBC7;
+body {
+    background-color: #eddbc7;
     color: #222;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
+  
 h1 {
-    color: #A5402D;
+    color: #a5402d;
     text-align: center;
     margin-bottom: 0;
-
 }
-
+  
 h2 {
     text-align: center;
     margin-top: 5px;
 }
-
+  
 img.bigTex {
     max-width: 100%;
     max-height: 100%;
 }
-
+  
 .caption {
     font-size: 14px;
     color: #777;
     font-style: italic;
     text-align: right;
 }
-
+  
 .contentWrapper {
     margin: 0 auto;
     max-width: 70%;
 }
-
+  
 .content {
     background-color: #f7f7f7;
     padding: 20px 40px;
     border: 0.5px solid #555;
 }
-
-a:link, a:visited, a:focus {
-    color: #A5402D;
-  }
   
-  a:hover {
+a:link,
+a:visited,
+a:focus {
+    color: #a5402d;
+}
+  
+a:hover {
     color: #222;
-  }
+}
   
-  a:active {
-    color: #A5402D;  
+a:active {
+    color: #a5402d;
 }
-
+  
 .highlight {
-    color: #A5402D;
+    color: #a5402d;
 }
-
+  
 #myTable {
     border-collapse: collapse;
     margin: 15px 0;
     font-size: 0.9em;
-    border: 1px dashed #A5402D;
+    border: 1px dashed #a5402d;
 }
-
+  
 #myTable th {
-    background-color: #A5402D;
+    background-color: #a5402d;
     color: #ffffff;
     text-align: left;
 }
-
+  
 #myTable th,
 #myTable td {
     padding: 12px 15px;
 }
-
+  
 #myTable tr {
     border-bottom: 1px solid #dddddd;
 }
-
+  
 #myTable tr:nth-of-type(even) {
     background-color: #f3f3f3;
 }
-
-#myTable  tr:last-of-type {
-    border-bottom: 1px dashed #A5402D;
+  
+#myTable tr:last-of-type {
+    border-bottom: 1px dashed #a5402d;
 }
-
+  
 .rightAlign {
     text-align: right;
 }
-
