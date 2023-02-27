@@ -22,3 +22,11 @@ If you need a refresher, you go back to the [CSS section](https://github.com/Car
 * Make the HTML table pretty
 
 ## Load in data into the HTML table using Javascript
+
+If you need a refresher, you go back to the [Javascript section](https://github.com/CarlaAstudillo/nicar-2023-intro-to-web-dev/tree/main/03_JAVASCRIPT).
+
+* Set up a local web server
+* Get clean data that can be loaded
+* Use Javascript to load the data
+* Use Javascript to loop through the data
+* Write a Javascript function
