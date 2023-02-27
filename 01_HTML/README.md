@@ -1,6 +1,6 @@
 # HTML
 
-![Web site for the 1996 movie Space Jam](01_HTML_example/images/space_jam_site.gif)
+![Web site for the 1996 movie Space Jam](../_media/01_space_jam_site.gif)
 
 ## What is HTML?
 
@@ -8,7 +8,7 @@
 
 Think of it like the skeleton that makes up the structure of a website and holds the content.
 
-![Skeletons dancing](01_HTML_example/images/skeletons_dancing.jpeg)
+![Skeletons dancing](../_media/01_skeletons_dancing.jpeg)
 
 It's important to note that HTML is not a programming language-- it is a markup language that defines the structure of your site. 
 
@@ -18,7 +18,7 @@ You can see HTML in all of it's glory if you ever 'view the source' of a web sit
 
 One of the best tools you can use to learn code is to use your browser's Web Inspector. This can be used to inspect under the hood of your favorite site. You use this to see how it all works together.
 
-![What the web inspector looks like](01_HTML_example/images/web_inspector.png)
+![What the web inspector looks like](../_media/01_web_inspector.png)
 
 Go to a web site you want to inspect. You can turn on the Web Inspector using any browser. 
 
@@ -36,7 +36,7 @@ If you're using Firefox, you can open up the Web Inspector [this way](https://fi
 
 Ideally, your HTML, CSS and images files should be stored in the same folder with file names that DO NOT include spaces or special characters.
 
-![This is the HTML folder structure](01_HTML_example/images/folder_structure.png)
+![This is the HTML folder structure](../_media/01_folder_structure.png)
 
 For this class, you will be using [Visual Studio Code](https://code.visualstudio.com/) which should be installed in your computers. However, any plain text editor will do: [TextEdit](https://support.apple.com/guide/textedit/welcome/mac), which comes with Macs, [Notepad](https://fileinfo.com/software/microsoft/notepad), which comes with Microsoft, [Sublime Text](https://www.sublimetext.com/) and [Atom](https://atom.io/) are all good choices.
 
@@ -128,7 +128,7 @@ Or a standalone element which is an element that's closed and cannot contain any
 
 ## Let's look at some sample HTML
 
-Open up in your Visual Code Editor text editor the [`index.html`](01_HTML_example/index.html) file in the `01_HTML_example` folder. Let's start to write some HTML, but first a few things:
+Go to the `00_EXCERCISES` folder and into the `01_HTML_example` folder. In your Visual Code Editor, open up the [`index.html`](../00_EXCERCISES/01_HTML_EXAMPLE/index.html) file. Let's start to write some HTML, but first a few things:
 
 ## HTML Tags
 
@@ -206,7 +206,8 @@ Attributes provide additional information about an element-- like a class, ID, t
 
 Values are what's assigned to a given attribute. These are placed inside quotation marks.
 
-<tag attribute="value">Content modified by the attribute</tag>
+![An image showing <p class="content">Lorem ipsum dolor sit</p>](../_media/01_diagram-html-element.jpg)
+
 
 Example: 
 
@@ -332,6 +333,28 @@ Span tags are inline container tags that can apply to part of a text. Because th
 <p>This is a paragraph and the <span style="color:red;">span tag marks up part of the text.</span></p>
 ```
 
+**HTML Tables**
+
+These tags let us build a simple table with structured data. We use the tag `<table>` to define the table, `<tr>` to define table row, `<th>` to define table header and `<td>` to define a table cell. We can add an attribute like class to give it a class name.
+
+
+```
+<table class="myTable">
+  <tr>
+    <th>Column Header 1</th>
+    <th>Column Header 2</th>
+  </tr>
+  <tr>
+    <td>Row 1/Column 1</td>
+    <td>Row 1/Column 2</td>
+  </tr>
+  <tr>
+    <td>Row 2/Column 1</td>
+    <td>Row 2/Column 2</td>
+  </tr>
+</table>
+```
+
 **Comments**
 
 Comments are only visible in the page's source code but not rendered by the browser, therefore invisible to users. It is used to add notification, reminders and documentation to your code for you or your fellow coders. It begins with <!–– and the comment closes with ––>.
@@ -342,4 +365,4 @@ Comments are only visible in the page's source code but not rendered by the brow
 
 ## Mess Around with HTML
 
-Open up in your Visual Code Editor text editor the [`index.html`](02_HTML_example/index.html) file in the `02_HTML_example` folder. Play around with the HTML elements in that file. Experiment with adding or changing things around.
+Go to the `00_EXCERCISES` folder and into the `02_HTML_example` folder. In your Visual Code Editor, open up the [`index.html`](../00_EXCERCISES/02_HTML_EXAMPLE/index.html) file. Play around with the HTML elements in that file. Experiment with adding or changing things around.
