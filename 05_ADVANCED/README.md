@@ -45,6 +45,20 @@ Node.js (Nael)
 
 NPM (Nael)
 
-Frameworks / React (Andrew)
+## Frameworks / React
+
+In JavaScript, a framework is special type of library that provides a set of tools and features to make it easier to build web applications. Frameworks can help streamline the development process by providing a structure and a set of conventions for building applications. They can also save time and effort by handling common tasks. Rather than starting from scratch and having to bring all the pieces together like we've done today, frameworks can often help jumpstart a new project. The cost is that the more a framework can save you time, the more assumptions and opinions it likely has about *how* you should build it. In some cases, these frontend frameworks even make you use new languages (often dervied from HTML/CSS/JavaScript). The best framework to use is the one that's best for your particular usecase.
+
+Frameworks come in all kinds of flavors, but the most applicable ones for web development are frontend frameworks – the most common of which are:
+  - [React](https://reactjs.org/) *(ol' reliable, by far the most commonly used)*
+  - [Vue](https://vuejs.org/) *(has a solid, loyal following)*
+  - [Angular](https://angular.io/) *(not in vogue, but it was first so still used)*
+  - [Svelte](https://svelte.dev/) & [Gatsby](https://www.gatsbyjs.com/) *(the "new kids" on the block)*
+  - [Solid](https://www.solidjs.com/) *(I've never heard of it, but apparently it's the newer popular kid)*
+  - [Parcel](https://parceljs.org/) *(the simplest the start with, IMO)*
+
+Don't take my word for it. One great resource to keep an eye on every year is the ["State of JavaScript"](https://2022.stateofjs.com/en-US/) survey sent out to thousands of JavaScript developers across many industries. While the basics of HTML/CSS/JavaScript presented today have stood the test of time – it can be fun to peak at what the latest and greatest is.
+
+If you want to learn more about frameworks, I recommend looking at [the the class I taught at NICAR 2022](https://github.com/brizandrew/nicar-2022-javascript-103) on the subject.
 
 D3 (Nael)
