@@ -5,9 +5,12 @@ In this class, we will go over the basics of building a web site. You will learn
 
 * [Naël Shiab](https://www.naelshiab.com/), Senior Data Producer at CBC News
 
-* [Andrew Briz](https://twitter.com/brizandrew), Editorial Director of Newsroom Engineering at Politico
+* [Andrew Briz](https://twitter.com/brizandrew), Editorial Director of Newsroom Engineering at POLITICO
 
 * [Carla Astudillo](https://www.texastribune.org/about/staff/carla-astudillo/), Senior Data Visual Developer at The Texas Tribune
+
+## Cheatsheet
+If you were at the session (thanks for coming!), here's [a link to our cheatsheet](_media/00_diagram_cheat-sheet.jpg).
 
 ## Installed Software
 
