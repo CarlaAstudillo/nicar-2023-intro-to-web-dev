@@ -43,6 +43,8 @@ Finally, Github’s README use a language called Markdown which is a markup lang
 
 Node.js (Nael)
 
+NPM (Nael)
+
 Frameworks / React (Andrew)
 
 D3 (Nael)

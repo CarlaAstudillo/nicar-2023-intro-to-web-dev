@@ -44,7 +44,7 @@ _index.html_
 
 Here's how it looks for now.
 
-![An HTML file and the result in the browser.](./img/properties/setup.jpg)
+![An HTML file and the result in the browser.](../../_media/02_03_setup.jpg)
 
 ### Font properties
 
@@ -58,7 +58,7 @@ These properties allow you to change the properties of the font.
 
 In our CSS file, let's add a font size of 16px, a font weight of 100, and a font-style italic.
 
-![A CSS file with text properties and the result in the browser](./img/properties/font-properties.jpg)
+![A CSS file with text properties and the result in the browser](../../_media/02_03_font-properties.jpg)
 
 If you want to change the font, you need to overwrite the default font-family property.
 
@@ -66,17 +66,17 @@ If you want to change the font, you need to overwrite the default font-family pr
 
 We are going to use the Thin 100 Italic [Tourney font](https://fonts.google.com/specimen/Tourney). Search it and then select it from the Google Fonts website.
 
-![The Google Font website displays the Tourney font](./img/properties/tourney-font.jpg)
+![The Google Font website displays the Tourney font](../../_media/02_03_tourney-font.jpg)
 
 Once selected, a panel will open with the code that you need to use to make the font available on your web page.
 
-![HTML and CSS code to make the Tourney font available on a webpage](./img/properties/selected-font.jpg)
+![HTML and CSS code to make the Tourney font available on a webpage](../../_media/02_03_selected-font.jpg)
 
 The first block of code needs to be put in the head of your HTML and the second part of the code in your CSS.
 
 Here's the result!
 
-![HTML and CSS code displays the Tourney font in the browser](./img/properties/font-family.jpg)
+![HTML and CSS code displays the Tourney font in the browser](../../_media/02_03_font-family.jpg)
 
 ### Text properties
 
@@ -92,7 +92,7 @@ Let's update our code with dark blue as a color, center as alignment, and underl
 
 Looking good!
 
-![A CSS and HTML files create an underlined blue paragraph.](./img/properties/text-properties.jpg)
+![A CSS and HTML files create an underlined blue paragraph.](../../_media/02_03_text-properties.jpg)
 
 ### Background properties
 
@@ -108,11 +108,11 @@ You can also change the appearance of the whole container.
 
 - [background-position](https://www.w3schools.com/cssref/pr_background-position.php): how you want the image to be positioned. The options are "left top", "left center", "left bottom", "right top", "right center", "right bottom", "center top", "center center", and "center bottom".
 
-Let's change our CSS file to add a grey color background to the body element and a picture of a cat as background to our div. You can download the image directly from this repository (./02_CSS/03_PROPERTIES/img/properties/cat.jpg).
+Let's change our CSS file to add a grey color background to the body element and a picture of a cat as background to our div. You can download the image directly from this repository (./02_CSS/03_PROPERTIES/img/cat.jpg).
 
 Here's how it looks now.
 
-![A webpage showing some text with a cat as background.](./img/properties/background-properties.jpg)
+![A webpage showing some text with a cat as background.](../../_media/02_03_background-properties.jpg)
 
 ### Box properties
 
@@ -120,11 +120,11 @@ Now that we have backgrounds, we notice something a bit strange: there's a gap b
 
 If we inspect our page, and more specifically the body element, we can see that there's a default margin of 8px.
 
-![A browser with the developer tool opened shows the styles tab.](./img/properties/body-default-margin.jpg)
+![A browser with the developer tool opened shows the styles tab.](../../_media/02_03_body-default-margin.jpg)
 
 Each HTML elements are a box and you can modify this box with CSS. This is what we call the [CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp).
 
-![A diagram showing the content, margin, padding and margin of an HTML element.](./img/properties/box-model.jpg)
+![A diagram showing the content, margin, padding and margin of an HTML element.](../../_media/02_03_box-model.jpg)
 
 Here are the main box properties.
 
@@ -142,7 +142,7 @@ For the padding and the margin, if you pass only one value ("10px" for example),
 
 In our CSS file, we add a 2 pixels wide orange border, with a solid style. We set the padding to 20 pixels and the margin to 30px on top, 20px on left, 0px on bottom, and 20px again on right.
 
-![A webpage showing a paragraph with an orange border.](./img/properties/box-properties.jpg)
+![A webpage showing a paragraph with an orange border.](../../_media/02_03_box-properties.jpg)
 
 ### Position
 
@@ -160,7 +160,7 @@ For more information, check [this documentation](https://www.w3schools.com/css/c
 
 When placing elements on top of each other, you often need to adjust the z-index as well. The [z-index](https://www.w3schools.com/css/css_z-index.asp) is the stack order of your elements. The greater the z-index, the higher the element will be in the stack.
 
-To demonstrate this property, we will add a small gif of a cat on the top right corner of the viewport. You can download the gif directly from this repo (./02_CSS/img/properties/cat.gif).
+To demonstrate this property, we will add a small gif of a cat on the top right corner of the viewport. You can download the gif directly from this repo (./02_CSS/img/cat.gif).
 
 First, add the gif to your HTML file with an IMG tag. You can place it just before the div.
 
@@ -252,7 +252,7 @@ div {
 
 And here's the result! Change the z-index to -1 to see the gif below the divs.
 
-![A gif showing an animated cat with a fixed position, while the user scrolls.](./img/properties/position-properties.gif)
+![A gif showing an animated cat with a fixed position, while the user scrolls.](../../_media/02_03_position-properties.gif)
 
 ### Display
 
@@ -281,7 +281,7 @@ You'll notice that the divs are now all placed on the same horizontal axis.
 
 You can do much more with a flex display. I strongly suggest reading [this excellent guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for more information.
 
-![A webpage showing three horizontally aligned paragraphs.](./img/properties/display-property.jpg)
+![A webpage showing three horizontally aligned paragraphs.](../../_media/02_03_display-property.jpg)
 
 ### Media queries
 
@@ -307,7 +307,7 @@ Here's the CSS code to do that. Write it at the end of your CSS file.
 
 If you resize your browser window to a smaller width, you'll notice that the background color becomes grey, the text smaller, and the space between divs narrower.
 
-![A web page with a grey background and small text.](./img/properties/media%20query.jpg)
+![A web page with a grey background and small text.](../../_media/02_03_media%20query.jpg)
 
 ### Transitions and animations
 
@@ -356,4 +356,4 @@ And create the _catAnimation_ by adding this at the end of your CSS file.
 
 Congrats! You are now an expert in CSS properties! :)
 
-![A cat gif moving all around a web page.](./img/properties/animation-property.gif)
+![A cat gif moving all around a web page.](../../_media/02_03_animation-property.gif)
