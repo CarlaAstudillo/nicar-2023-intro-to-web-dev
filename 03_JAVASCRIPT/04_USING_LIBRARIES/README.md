@@ -8,7 +8,7 @@ Most open-source JavaScript libraries (or modules) are hosted on GitHub and are 
 
 ## Setup
 
-After the previous section, our code looked like this and we are going to reuse it. Don't forget to launch the Web Server extension!
+After the previous section, our code looked like this and we are going to reuse it. Don't forget to start the Live Server extension!
 
 _index.html_
 
@@ -36,7 +36,7 @@ async function main() {
 main();
 ```
 
-In your browser, if you open the local link to your project (from the Web Server extension, something like http://127.0.0.1:8887/), you should see the CSV data being logged in the console.
+In your browser, if you open the local link to your project (from the Live Server extension, something like http://127.0.0.1:5500/), you should see the CSV data being logged in the console.
 
 ![An HTML file, a JavaScript file and some data are logged in the console of a browser.](../../_media/03_04_libraries-setup.jpg)
 

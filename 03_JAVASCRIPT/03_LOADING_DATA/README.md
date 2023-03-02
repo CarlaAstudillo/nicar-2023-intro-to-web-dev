@@ -34,19 +34,15 @@ Open your HTML file in your browser and open the console (in the top menu, click
 
 Most of the time, you have some data locally that you want to load on your page. But for security reasons, browsers will block you from loading it without a local server.
 
-We need an extra setup step. If it's not already installed on your browser, install the [Web Server for Chrome extension](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related?hl=en).
+We need an extra setup step. If it's not already installed on your VS Code browser, install the Live server extension.
 
-![The Web Server for Chrome extension.](../../_media/03_03_web-server.jpg)
+![The live server extension for Visual Studio Code.](../../_media/03_03_live-server-vs-code-extension.png)
 
-Once installed, launch it. A pop-up may tell you that the extension is no longer supported. It's fine. Open it anyway.
+Once installed, launch it by clicking on the "Go live" button at the bottom right side of VS code.
 
-![Open the Chrome extension even if it's no longer supported.](../../_media/03_03_open-anyway.jpg)
+![Open the live server extension.](../../_media/03_03_starting-live-server.png)
 
-The last thing to do is to choose the folder in which you have your HTML and JS code.
-
-![Local server started.](../../_media/03_03_local-server-started.jpg)
-
-Click on the web server URL (http://127.0.0.1:8887 in my case, you might have something slightly different), open the console, and you should see "Hi!" being logged.
+It will open your browser with a URL looking like this: `http://127.0.0.1:5500/`. If you open the console, you should see "Hi!" being logged.
 
 A local server simulates the web, which is very handy when developing web projects while keeping everything on your computer.
 
