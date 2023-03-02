@@ -23,7 +23,7 @@ In order to design a script, you must first understand how to think like a compu
 
 | Tool  | Definition | Example |
 | ------------- | ------------- | ------------- |
-| Types | The basic building blocks of programming | `5` 
+| Values | The basic building blocks of programming | `5` 
 | Variables | A system for keeping track of values with unique labels | A user's "age"
 | Operations | The actions preformed to manipulate a computer system | Adding two numbers
 | Conditionals | Branching paths depending on whether something is true (i.e. making a decision) | Do X if 5 is greater than 10
